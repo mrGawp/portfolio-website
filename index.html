@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no"/>
+<link rel="stylesheet" href="style.css">
+<title>--</title>
+
+<body>
+
+<div class="ani-pp">
+  <div class="ani-p">
+    <div class="typer-p">
+    <div class="typer" id="typer">
+      <h1>	@<span style="color: #755dd4;">import </span>
+          <span style="color: aqua;">url</span>
+          &#40;<span style="color: #75d978">'</span><span style="color: aqua;">https://christianneeson.ca/</span><span style="color: #75d978">'</span>&#41;;
+        </h1>
+    </div>
+  </div>
+  <div class="typewriter" id="typewriter">
+    <h1>	&#60;<span style="color: #f54257;">script</span>&#62;
+        <span style="color: #f54257;">console</span>.<span style="color: #4f71e8;">log</span>(<span style="color: #75d978;">"hello world"</span>);
+      &#60;/<span style="color: #f54257;">script</span>&#62; </h1>
+  </div>
+<div class="loading-h" id="loading-h"></div>
+<h1 class="synerr" id="synerr"> ✕ Uncaught Syntax Error</h1>
+<img class="ani-img" id="ani-img" src=""/>
+<div class="loadbar" id="loadbar">
+    <div class="loader">
+      </div>
+  </div>
+<div class="pdot-pp" id="pdot">
+<div class="pdot-p" onclick="homepc()">
+  <h1 class="ph1">Hello World!</h1>
+<h1 class="ph2">I'm Chris, Web Developer.</h1>
+  </div>
+    </div>
+  <a id="clicker" class="clicker"href="#">&#8681;</a>
+  </div>
+</div>
+<img class="lay-waves" src='./under.svg'/>
+<br><br><br><br>
+<h1>test test test</h1>
+<script>
+//load animation
+window.onload = setTimeout(function la() {
+  document.getElementById('typer').style.animation = "l-flip 1s";
+},3200);
+window.onload = setTimeout(function lb() {
+  document.getElementById('typer').style.visibility = "hidden";
+  document.getElementById('loadbar').style.visibility = "visible";
+},3700);
+window.onload = setTimeout(function lc() {
+  document.getElementById('loadbar').style.animation = "lb-gone 1s";
+},6000);
+window.onload = setTimeout(function ld() {
+  document.getElementById('loadbar').style.visibility = "hidden";
+  document.getElementById('pdot').style.animation = "load-change 6s";
+  document.getElementById('pdot').style.visibility = "visible";
+},6800);
+
+// click animation
+  function homepc() {
+    document.getElementById('pdot').style.visibility = "hidden";
+    document.getElementById('pdot').style.animation = "";
+    document.getElementById('typewriter').style.animation = "typing 3.8s steps(30, end)";
+    document.getElementById('typewriter').style.visibility = "visible";
+    var a;
+    var b;
+    var c;
+    var d;
+    a = setTimeout(function sta() {
+      document.getElementById('typewriter').style.animation = "";
+      document.getElementById('typewriter').style.visibility = "hidden";
+      document.getElementById('loading-h').style.visibility = "visible";
+    },4200);
+    b = setTimeout(function stb() {
+      document.getElementById('loading-h').style.visibility = "hidden";
+      document.getElementById('synerr').style.visibility = "visible";
+      document.getElementById('synerr').style.animation = "sync 1s";
+    },5000);
+    c = setTimeout(function stc() {
+      document.getElementById('synerr').style.animation = "";
+      document.getElementById('synerr').style.visibility = "hidden";
+      document.getElementById('ani-img').src = "slam-smash.gif";
+      document.getElementById('ani-img').style.animation = "change-load 5.8s";
+      document.getElementById('ani-img').style.visibility = "visible";
+    },6000);
+    d = setTimeout(function std() {
+      document.getElementById('ani-img').src = "";
+      document.getElementById('ani-img').style.animation = "";
+      document.getElementById('ani-img').style.visibility = "hidden";
+      document.getElementById('pdot').style.animation = "load-change 6s";
+      document.getElementById('pdot').style.visibility = "visible";
+    },11700);
+  }
+</script>
+</body>
+</html>

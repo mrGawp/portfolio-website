@@ -1,0 +1,307 @@
+
+/* GLOBAL STYLES */
+body {
+  margin:0;
+  background: #434857;
+}
+
+.ani-pp {
+  width: 100%;
+  height:100vh ;
+  opacity: 1;
+  background: #333;
+  display: flex;
+  justify-content: center;
+}
+.ani-p {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.typewriter {
+  visibility: hidden;
+}
+.typewriter h1 {
+  color: #b2b2bf;
+  font-size: 3vmin;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid #3d60db;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  z-index: 1;
+  animation:
+    blink-caret .5s step-end infinite;
+}
+.typer-p {
+width:auto;
+height: auto;
+margin:0;
+position: absolute;
+align-items: center;
+}
+.typer h1 {
+  position: relative;
+  color: #b2b2bf;
+  font-size: 3vmin;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid #3d60db;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  z-index: 0;
+  animation:
+    typing 3s steps(30, end),
+    blink-caret .5s step-end infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes l-flip {
+  from { opacity: 1;}
+  to { opacity: 0; transform: rotateX(90deg) scale(0.5);}
+}
+@keyframes typing {
+  0% { width: 0}
+  100% { width: 100%}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent}
+  50% { border-color: #3d60db}
+}
+
+.loading-h {
+  position: absolute;
+  margin-right: auto;
+  margin-left:auto;
+  border: 16px solid #4a4949;
+  border-top: 16px solid #6e6d6d;
+  margin-top:-50px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  visibility: hidden;
+  animation:
+  spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.synerr {
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -45px;
+  color: #ed2b2b;
+  font-size: 3.5vmin;
+  font-family: monospace;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  z-index: 1;
+  visibility: hidden;
+}
+@keyframes sync {
+  0% { transform: scale(1) }
+  30% { transform: scale(1.1) }
+  100% { transform: scale(1) }
+}
+.ani-img {
+  opacity: 1;
+  margin-top: -150px;
+  position: absolute;
+  width:300px;
+  height:300px;
+  z-index: 1;
+  visibility: hidden;
+}
+.pdot-pp {
+width:100%;
+height: 100%;
+margin:0;
+visibility: hidden;
+position: absolute;
+align-items: center;
+}
+.pdot-p {
+  width: 60vw;
+  height: auto;
+  background: url('background.png');
+  opacity: 0.9;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+  animation: header 20s ease infinite;
+  margin: auto;
+  flex-direction: row;
+  margin-top:-80px;
+  padding: 25px;
+  position: relative;
+  align-items: center;
+}
+.ph1 {
+    opacity: 1;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 6vmin;
+    letter-spacing: 1px;
+    animation: lilg 2500ms infinite;
+}
+.ph2 {
+    opacity: 1;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    animation: lilg 2000ms infinite;
+}
+.pdot-p:hover .ph1{
+    cursor: pointer;
+    color: #bac7d9;
+    animation: 0.5s glitch infinite;
+    box-shadow: none;
+}
+.pdot-p:hover .ph2 {
+    cursor: pointer;
+    color: #bac7d9;
+    animation: 0.5s glitch infinite;
+    box-shadow: none;
+}
+
+@keyframes glitch {
+    0% {text-shadow: 7px 2px purple , -7px -2px aqua; transform: scale(1.2) rotate(1deg)}
+    12% {text-shadow: none;}
+    25% {text-shadow: 9px 2px purple , -7px -2px aqua; transform: scale(1.2) rotate(-1deg)}
+    36% {text-shadow: 7px 2px purple , -7px -2px aqua; transform: scale(1.2) rotate(1deg)}
+    50% {text-shadow: 10px 2px purple , -7px -2px aqua; transform: scale(1.2) rotate(1deg)}
+    62% {text-shadow: 7px 2px purple , -10px -2px aqua; transform: scale(1.2) rotate(1deg)}
+    75% {text-shadow: 6px 2px purple , -7px -2px aqua; transform: scale(1.2) rotate(1deg)}
+    88% {text-shadow: 7px 2px purple , -6px -2px aqua; transform: scale(1.2) rotate(-3deg)}
+    100% {text-shadow: 7px 2px purple , -10px -2px aqua; transform: scale(1.2) rotate(1deg)}
+}
+@keyframes lilg {
+    0% {text-shadow: 2px 2px 5px purple , -1px -2px aqua;}
+    12% {text-shadow: none;}
+    25% {text-shadow: 2px 2px 5px purple , -1px -2px  aqua;}
+    36% {text-shadow: 2px 2px 5px purple , -1px -2px aqua;}
+    50% {text-shadow: 2px 2px 5px purple , -1px -2px  aqua;}
+    62% {text-shadow: 2px 2px 5px purple , -1px -2px  aqua;}
+    75% {text-shadow: 2px 2px 5px purple , -1px -2px  aqua;}
+    88% {text-shadow: none;}
+    100% {text-shadow: 2px 2px 5px purple , -1px -2px aqua;}
+}
+@keyframes header {
+	0% {background-position: 0% 100%;}
+	50% {background-position: 0% 0%;}
+	100% {background-position: 0% 100%;}
+}
+.loadbar {
+  margin:1px;
+  background: transparent;
+  width: 10vw;
+  height: 26px;
+  border: 3px solid white;
+  border-radius: 18px;
+  position: absolute;
+  box-shadow: 2px 3px 3px #1e1e1f;
+  visibility: hidden;
+  transform: rotateX(90deg);
+  animation-name: lb-flip;
+  animation-duration: 1s;
+  animation-delay:3.6s;
+  animation-fill-mode: forwards;
+}
+.loader {
+  position: relative;
+  width:10%;
+  height:24px;
+  opacity: 0.3;
+  background: linear-gradient(to right, #8762e3, #626fe3);
+  border-radius: 28px;
+  animation-name: loadani;
+  animation-duration: 2s;
+  animation-delay:4.1s;
+  animation-fill-mode: forwards;
+}
+@keyframes loadani {
+  0% {width:10%; opacity: 0.3;}
+  20% {width:25%; opacity: 0.4;}
+  50% {width:50%; opacity: 0.5;}
+  65% {width:90%; opacity: 0.6;}
+  80% {width:95%; opacity: 0.6;}
+  100% {width:100%; opacity: 0.7;}
+}
+@keyframes lb-flip {
+  0% { opacity: 0.2; width: 0vw;}
+  70% { opacity: 0.8; width: 32vw; transform: rotateX(0deg);}
+  100% { opacity: 0.8; width: 32vw; transform: rotateX(0deg);}
+}
+@keyframes lb-gone {
+  from { opacity: 0.8; width: 32vw; transform: rotateX(0deg);}
+  to { opacity: 0; width: 0vw; transform: translateY(50%);}
+
+}
+a {
+  text-decoration: none;
+}
+.clicker {
+  opacity: 0.6;
+  bottom: 40px;
+  font-size: 3vmin;
+  position: absolute;
+  align-items: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  z-index: 1;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+@keyframes load-change {
+  0% { opacity: 0; transform: scale(0.9);}
+  100% { opacity: 1; transform: scale(1);}
+}
+@keyframes change-load {
+  0% { opacity: 0;}
+  10% { opacity: 1;}
+  90% { opacity: 1; transform: scale(1);}
+  100% { opacity: 0; transform: scale(0.8);}
+}
+
+/*SVG BORDER THING*/
+/*SVG BORDER THING*/
+/*SVG BORDER THING*/
+/*SVG BORDER THING*/
+.lay-waves {
+  opacity: 1;
+  aspect-ratio: 900/200;
+  height: auto;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border:none;
+  margin-top:-9px;
+  margin-bottom:-9px;;
+}
