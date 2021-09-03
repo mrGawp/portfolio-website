@@ -3,6 +3,7 @@
 body {
   margin:0;
   background: #434857;
+  overflow-x: hidden;
 }
 
 .ani-pp {
