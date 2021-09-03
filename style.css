@@ -6,6 +6,10 @@ body {
   overflow-x: hidden !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ani-pp {
   margin:0;
   -webkit-background-size: cover;
@@ -24,6 +28,7 @@ body {
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
+  overflow-x: hidden !important;
 }
 .typewriter {
   visibility: hidden;
