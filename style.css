@@ -1,24 +1,37 @@
 
-/* GLOBAL STYLES */
 body {
-  margin:0;
-  background: #434857;
+  margin:auto;
+  background: #333;
   overflow-x: hidden !important;
 }
 
 html {
+  scrollbar-color: #474747 #292828;
   scroll-behavior: smooth;
 }
-
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+background-color: #131313;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #474747;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #636262;
+}
 .ani-pp {
   margin:0;
+  background-image: url('bgb.png');
+  background-color: #333;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   width: 100%;
   height:100vh;
   opacity: 1;
-  background: #333;
   display: flex;
   justify-content: center;
   overflow-x: hidden !important;
@@ -229,7 +242,7 @@ align-items: center;
   background: transparent;
   width: 10vw;
   height: 26px;
-  border: 3px solid white;
+  border: 3px solid #b2b2bf;
   border-radius: 18px;
   position: absolute;
   box-shadow: 2px 3px 3px #1e1e1f;
@@ -274,24 +287,29 @@ a {
   text-decoration: none;
 }
 .clicker {
-  opacity: 0.6;
+  visibility: hidden;
+  opacity: 0.4;
   bottom: 40px;
-  font-size: 3vmin;
+  font-size: 5vmin;
+  font-weight: bold;
   position: absolute;
   align-items: center;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: monospace;
   text-decoration: none;
-  z-index: 1;
 }
 @keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }
+    from { transform: translate(0,  0px) rotate(-180deg); }
+    65%  { transform: translate(0, 15px) rotate(-180deg); }
+    to   { transform: translate(0, -0px) rotate(-180deg); }
 }
 @keyframes load-change {
   0% { opacity: 0; transform: scale(0.9);}
   100% { opacity: 1; transform: scale(1);}
+}
+@keyframes load-change-c {
+  0% { opacity: 0; transform: scale(0.9) rotate(-180deg);;}
+  100% { opacity: 0.4; transform: scale(1) rotate(-180deg);;}
 }
 @keyframes change-load {
   0% { opacity: 0;}
@@ -300,12 +318,13 @@ a {
   100% { opacity: 0; transform: scale(0.8);}
 }
 
-/*SVG BORDER THING*/
-/*SVG BORDER THING*/
+/*SVG BORDER THING--------------------------------------------------------------------------*/
+/*SVG BORDER THING*//*SVG BORDER THING*//*SVG BORDER THING*//*SVG BORDER THING*//*SVG BORDER THING*//*SVG BORDER THING*/
 /*SVG BORDER THING*/
 /*SVG BORDER THING*/
 .lay-waves {
   opacity: 1;
+  position: relative;
   aspect-ratio: 900/200;
   height: auto;
   width:100%;
@@ -314,5 +333,455 @@ a {
   background-size: cover;
   border:none;
   margin-top:-9px;
-  margin-bottom:-9px;;
+  margin-bottom:-9px;
+
+}
+/*HAM NAV------------------------------------------------------------------------------------*/
+/*HAM NAV*/
+/*HAM NAV*/
+/*HAM NAV*/
+/*HAM NAV*/
+.dropbtn {
+  margin-top:18px;
+  margin-right: 25px;
+  opacity: 0.5;
+  float: right;
+  width:75px;
+  height:auto;
+  position: relative;
+  background: transparent;
+  transition: 0.3s;
+}
+.hline {
+  opacity: 0.5;
+  margin-top: 12px;
+  width:60px;
+  height:9px;
+  float: right;
+  border-radius: 2px;
+  background: #fff;
+  transition: 0.45s;
+}
+/*github - mrgawp*/
+.dropdown {
+  width: auto;
+  height: auto;
+  right:0;
+  position: fixed;
+  display: block;
+  z-index: 2;
+}
+
+.dropdown-content {
+  opacity: 0.5;
+  display: none;
+  padding-top: 150px;
+  position: relative;
+  background-color: transparent;
+  text-align: right;
+  width: 145px;
+  height: auto;
+  transition: 1s;
+  padding-bottom: 50px;
+}
+.dropdown-content a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Azeret Mono', monospace;
+  font-size: 20px;
+  opacity: 0;
+  padding: 12px 18px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  font-weight: bolder;
+}
+.dropdown-content a::after{
+content: '';
+position: absolute;
+bottom:0;
+left:0;
+width:87%;
+height:2px;
+background: #fff;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.3s ease-in;
+}
+.dropdown-content a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.hline:nth-child(1){transition-delay: 0.1s;}
+.hline:nth-child(2){transition-delay: 0.2s;}
+.hline:nth-child(3){transition-delay: 0.3s;}
+
+.dropdown-content a:nth-child(1) {animation: link 1s forwards; animation-delay: 0.4s;}
+.dropdown-content a:nth-child(2) {animation: link 1s forwards; animation-delay: 0.5s;}
+.dropdown-content a:nth-child(3) {animation: link 1s forwards; animation-delay: 0.6s;}
+.dropdown-content a:nth-child(4) {animation: link 1s forwards; animation-delay: 0.7s;}
+
+.dropdown:hover .hline:nth-child(1) {width: 65px;}
+.dropdown:hover .hline:nth-child(2) {width: 70px;}
+.dropdown:hover .hline:nth-child(3) {width: 75px;}
+.dropdown:hover .dropbtn {transform: rotate(-90deg) translateY(10px) translateX(-10px);}
+@keyframes link {
+0% {opacity: 0; transform: scale(1);}
+50% {opacity: 0.5; transform: scale(1.1);}
+100% {opacity: 0.5; transform: scale(1);}
+}
+@keyframes linkoff {
+from {opacity: 0.5;}
+to {opacity: 0; transform: translateX(40px);}
+}
+@media screen and (max-width: 850px) {
+  .dropbtn {
+    margin-right: 25px;
+    opacity: 0.5;
+    float: right;
+    width:40px;
+    margin-top:18px;
+    height:auto;
+    position: relative;
+    background: transparent;
+    transition: 0.3s;
+  }
+  .hline {
+    opacity: 0.5;
+    margin-top: 6px;
+    width:30px;
+    height:5px;
+    float: right;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.45s;
+  }
+  .dropdown:hover .hline:nth-child(1) {width: 30px;}
+  .dropdown:hover .hline:nth-child(2) {width: 35px;}
+  .dropdown:hover .hline:nth-child(3) {width: 40px;
+  }
+  .dropdown-content a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 15px;
+    opacity: 0;
+    padding: 9px 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-weight: bolder;
+  }
+  /*hello human reading my css*/
+  .dropdown-content {
+    opacity: 0.5;
+    display: none;
+    padding-top: 80px;
+    position: relative;
+    background-color: transparent;
+    text-align: right;
+    width: 120px;
+    height: auto;
+    transition: 1s;
+    padding-bottom: 50px;
+  }
+  .dropdown-content a::after{
+  content: '';
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:83%;
+  height:2px;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in;
+  }
+    }
+
+/*SECTIONS-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
+/*SECTIONS*/
+.sec1{
+  width:100%;
+  height: 400px;
+  background:#131313;
+  opacity: 1;
+  margin: 0;
+}
+
+/*PAINT DROP---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*PAINT DROP----------------------------------------------------------------------------------------------------------------------*/
+/*PAINT DROP-----------------------------------------------------------------------------------------------------*/
+/*PAINT DROP*/
+.drop-p {
+  border-radius: 50px;
+  display:flex;
+  align-content: center;
+  align-items:center;
+  justify-content:center;
+  border: 2px solid black;
+  position: relative;
+  float: right;
+  width: 360px;
+  height:360px;
+  background:#6e5f5f;
+  animation: painthover 2.8s ease infinite;
+}
+.drops {
+  margin-bottom:165px;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  opacity: 1;
+}
+/*BLACK*/
+.drop-black {
+  opacity: 0.9;
+  margin-right: 80px;
+  position: absolute;
+  width:148px;
+  height:146px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 54% 46% 65% 35% / 43% 42% 58% 57%;
+  box-shadow: inset 10px 10px 10px rgba(0,0,0, 0.03),
+              10px 15px 10px rgba(0,0,0, 0.05),
+              15px 10px 20px rgba(0,0,0,0.03),
+              inset -10px -10px 15px rgba(0,0,0,1);
+}
+/*github - mrgawp*/
+.drop-black::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background: rgba(0,0,0, 0.2);
+  width: 20px;
+  height: 20px;
+  border-radius: 68% 32% 72% 28% / 36% 40% 60% 64%;
+}
+.drop-black::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 65px;
+  background: rgba(0,0,0, 0.2);
+  width: 10px;
+  height: 10px;
+  border-radius: 37% 63% 50% 50% / 51% 53% 47% 49%;
+}
+/*BLUE*/
+.drop-blue {
+  opacity: 0.9;
+  margin-left: 190px;
+  margin-top: -60px;
+  position: absolute;
+  width:110px;
+  height:109px;
+  background: rgba(0, 13, 255, 0.7);
+  border-radius: 57% 43% 51% 49% / 57% 32% 68% 43%;
+  box-shadow: inset 10px 10px 10px rgba(0, 4, 84, 0.05),
+              10px 15px 10px rgba(0, 4, 84, 0.2),
+              15px 10px 20px rgba(0, 4, 84,0.05),
+              inset -10px -10px 15px rgba(1, 9, 153,1);
+}
+.drop-blue::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  background: rgba(0, 8, 154, 0.4);
+  width: 20px;
+  height: 18px;
+  border-radius: 68% 32% 72% 28% / 36% 40% 60% 64%;
+}
+.drop-blue::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  background: rgba(0, 8, 154, 0.4);
+  width: 14px;
+  height: 12px;
+  border-radius: 37% 63% 50% 50% / 51% 53% 47% 49%;
+}
+/*RED*/
+.drop-red {
+  opacity: 0.9;
+  margin-left: 170px;
+  margin-top: 100px;
+  position: absolute;
+  width:100px;
+  height:96px;
+  background: rgba(255, 0, 0, 0.7);
+  border-radius: 36% 64% 51% 49% / 57% 58% 42% 43%;
+  box-shadow: inset 10px 10px 10px rgba(107, 1, 1, 0.05),
+              10px 15px 10px rgba(107, 1, 1, 0.2),
+              15px 10px 20px rgba(107, 1, 1,0.05),
+              inset -10px -10px 15px rgba(137, 3, 3,1);
+}
+/*gawp code*/
+.drop-red::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: rgba(118, 0, 0, 0.4);
+  width: 17px;
+  height: 14px;
+  border-radius: 68% 32% 72% 28% / 36% 40% 60% 64%;
+}
+.drop-red::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 40px;
+  background: rgba(118, 0, 0, 0.4);
+  width: 9px;
+  height: 11px;
+  border-radius: 37% 63% 50% 50% / 51% 53% 47% 49%;
+}
+/*GREEN*/
+.drop-green {
+  opacity: 0.9;
+  margin-right: 10px;
+  margin-top: -85px;
+  position: absolute;
+  width:70px;
+  height:69px;
+  background: rgba(21, 255, 0, 0.7);
+  border-radius: 58% 42% 62% 38% / 61% 59% 41% 39%;
+  box-shadow: inset 10px 10px 10px rgba(10, 101, 2, 0.05),
+              10px 15px 10px rgba(10, 101, 2, 0.2),
+              15px 10px 20px rgba(10, 101, 2,0.05),
+              inset -10px -10px 15px rgba(17, 148, 5,1);
+}
+.drop-green::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  background: rgba(14, 159, 1, 0.4);
+  width: 12px;
+  height: 10px;
+  border-radius: 68% 32% 72% 28% / 36% 40% 60% 64%;
+}
+.drop-green::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 33px;
+  background: rgba(14, 159, 1, 0.4);
+  width: 9px;
+  height: 8px;
+  border-radius: 37% 63% 50% 50% / 51% 53% 47% 49%;
+}
+/*YELLOW*/
+.drop-yellow {
+  opacity: 0.9;
+  margin-right: 15px;
+  margin-top: 160px;
+  position: absolute;
+  width:65px;
+  height:65px;
+  background: rgba(255, 240, 17, 0.8);
+  border-radius: 40% 60% 69% 31% / 47% 61% 39% 53%;
+  box-shadow: inset 10px 10px 10px rgba(110, 103, 0, 0.05),
+              10px 15px 10px rgba(110, 103, 0, 0.2),
+              15px 10px 20px rgba(110, 103, 0,0.05),
+              inset -10px -10px 15px rgba(166, 156, 4,1);
+}
+.drop-yellow::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  background: rgba(110, 103, 0, 0.4);
+  width: 12px;
+  height: 10px;
+  border-radius: 68% 32% 72% 28% / 36% 40% 60% 64%;
+}
+.drop-yellow::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 26px;
+  background: rgba(110, 103, 0, 0.4);
+  width: 9px;
+  height: 8px;
+  border-radius: 37% 63% 50% 50% / 51% 53% 47% 49%;
+}
+/*WHITE*/
+.drop-white {
+  opacity: 0.9;
+  margin-right: 210px;
+  margin-top: 160px;
+  position: absolute;
+  width:45px;
+  height:45px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 66% 34% 69% 31% / 47% 61% 39% 53%;
+  box-shadow: inset 10px 10px 10px rgba(170, 170, 170, 0.05),
+              10px 15px 10px rgba(170, 170, 170, 0.03),
+              15px 10px 20px rgba(170, 170, 170,0.05),
+              inset -10px -10px 15px rgba(209, 209, 209,1);
+}
+.drop-white::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  background: rgba(110, 103, 0, 0.4);
+  width: 7px;
+  height: 6px;
+  border-radius: 69% 31% 69% 31% / 47% 61% 39% 53%;
+}
+.drop-white::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 19px;
+  background: rgba(110, 103, 0, 0.4);
+  width: 5px;
+  height: 7px;
+  border-radius: 69% 31% 69% 31% / 47% 61% 39% 53%;
+}
+.drop-hol {
+  top:-70px;
+  left:-160px;
+  position: absolute;
+  z-index:1;
+  width:65px;
+  height:65px;
+  border: 3px solid black;
+  background: #131313;
+  border-radius: 50%;
+}
+.drop-text {
+  opacity: 0;
+  margin-top:225px;
+  margin-right: -200px;
+  position: absolute;
+  color: #b2b2bf;
+  font-size: 10px;
+  font-family: monospace;
+  text-shadow: 1px 1px black;
+  transition: opacity 1s;
+}
+.drop-p:hover .drop-text {
+  opacity: 1;
+}
+@keyframes painthover {
+0% {transform: scale(0.75);}
+50% {transform: scale(0.76);}
+100% {transform: scale(0.75);}
 }

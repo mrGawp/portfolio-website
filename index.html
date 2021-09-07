@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="user-scalable=no"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <link rel="stylesheet" href="style.css">
-<title>--</title>
-
+<title>Christian - Web Developer</title>
+<link rel="shortcut icon" href="c.png">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&display=swap');
+</style>
 <body>
 
-<div class="ani-pp">
+
+  <div class="dropdown">
+    <div class="dropbtn" id="hamnav" onmouseover="navon()">
+      <div class="hline"></div>
+      <div class="hline"></div>
+      <div class="hline"></div>
+    </div>
+    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()">
+      <a href="#home">Home</a>
+      <a href="#aboutme">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+
+
+<div class="ani-pp" id="home">
   <div class="ani-p">
     <div class="typer-p">
     <div class="typer" id="typer">
@@ -35,13 +58,52 @@
 <h1 class="ph2">I'm Chris, Web Developer.</h1>
   </div>
     </div>
-  <a id="clicker" class="clicker"href="#">&#8681;</a>
+  <a id="clicker" class="clicker"href="#">^</a>
   </div>
 </div>
+
 <img class="lay-waves" src='./under.svg'/>
+<section class="sec1">
+  <div class="drop-p">
+    <div class ="drops">
+      <div class="drop-black"></div>
+      <div class="drop-blue"></div>
+      <div class="drop-red"></div>
+      <div class="drop-green"></div>
+      <div class="drop-yellow"></div>
+      <div class="drop-white"></div>
+      <div class="drop-hol"></div>
+      <h1 class="drop-text">Made entirely in CSS</h1>
+      </div>
+    </div>
+</section>
+<img class="lay-waves" src='./undera.svg'/>
+
 <br><br><br><br>
+<h1 id="aboutme">test test test</h1><br><br><br><br>
+<h1>test test test</h1><br><br><br><br>
+<h1>test test test</h1><br><br><br><br>
+<h1 id="projects">test test test</h1><br><br><br><br>
+<h1>test test test</h1><br><br><br><br>
+<h1>test test test</h1><br><br><br><br>
+<h1 id="contact">test test test</h1><br><br><br><br>
 <h1>test test test</h1>
+
 <script>
+//ham nav
+function navon() {
+  document.getElementById('dropcontent').style.display = "block";
+}
+function navoff() {
+  document.getElementById('dropcontent').style.animation = "linkoff 0.25s forwards";
+  var w;
+  w = setTimeout(function wb() {
+    document.getElementById('dropcontent').style.animation = "";
+    document.getElementById('dropcontent').style.display = "none";
+  },250);
+}
+
+
 //load animation
 window.onload = setTimeout(function la() {
   document.getElementById('typer').style.animation = "l-flip 1s";
@@ -52,11 +114,14 @@ window.onload = setTimeout(function lb() {
 },3700);
 window.onload = setTimeout(function lc() {
   document.getElementById('loadbar').style.animation = "lb-gone 1s";
+  document.getElementById('clicker').style.visibility = "visible";
+  document.getElementById('clicker').style.animation = "load-change-c 0.8s";
 },6000);
 window.onload = setTimeout(function ld() {
   document.getElementById('loadbar').style.visibility = "hidden";
   document.getElementById('pdot').style.animation = "load-change 6s";
   document.getElementById('pdot').style.visibility = "visible";
+  document.getElementById('clicker').style.animation = "floating 3s infinite";
 },6800);
 
 // click animation
