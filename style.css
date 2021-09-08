@@ -373,14 +373,14 @@ a {
   z-index: 2;
 }
 .dropclose {
-  display: none;
-  position: absolute;
-  margin-top:25px;
-  float: right;
-  height:60px;
-  width:90px;
-  background-color: transparent;
-  z-index: 3;
+      display: none;
+      position: fixed;
+      margin-top:22px;
+      right:18px;
+      height:65px;
+      width:55px;
+      background-color: transparent;
+      z-index: 300;
 }
 .dropdown:hover .dropclose{transform: rotate(-90deg) translateY(50px) translateX(10px);}
 
@@ -491,8 +491,8 @@ to {opacity: 0; transform: translateX(40px);}
   .dropdown-content {
     opacity: 0.5;
     display: none;
-    margin-top:50px;
-    padding-top: 50px;
+    margin-top:60px;
+    padding-top: 30px;
     position: relative;
     background-color: transparent;
     text-align: right;
@@ -515,13 +515,13 @@ to {opacity: 0; transform: translateX(40px);}
   }
     .dropclose {
       display: none;
-      position: absolute;
-      margin-top:25px;
-      float: right;
-      height:40px;
-      width:50px;
-      background-color: blue;
-      z-index: 3;
+      position: fixed;
+      margin-top:22px;
+      right:18px;
+      height:38px;
+      width:40px;
+      background-color: transparent;
+      z-index: 300;
     }
     .dropdown:hover .dropclose{transform: rotate(-90deg) translateY(50px) translateX(10px);}
   }

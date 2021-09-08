@@ -13,14 +13,14 @@
 </style>
 <body>
 
-  <div class="dropdown"onmouseover="navon()">
-    <div class="dropclose" id="dropclose" onclick="navoff()"></div>
-    <div class="dropbtn" id="hamnav">
+  <a class="dropclose" id="dropclose" onclick="navoff();navclickoff();" href="#"></a>
+  <div class="dropdown" onmouseleave="navoff();navclickoff();">
+    <div class="dropbtn" id="hamnav" onmouseover="navon()" onclick="navclick()">
       <div class="hline"></div>
       <div class="hline"></div>
       <div class="hline"></div>
     </div>
-    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()">
+    <div class="dropdown-content" id="dropcontent">
       <a href="#home">Home</a>
       <a href="#aboutme">About me</a>
       <a href="#projects">Projects</a>
@@ -96,8 +96,19 @@ function navon() {
     var cx;
   cx = setTimeout(function cxb() {
     document.getElementById('dropcontent').style.display = "block";
+  },280);
+}
+function navclick() {
+  var cx;
+  cx = setTimeout(function cxb() {
     document.getElementById('dropclose').style.display = "block";
   },280);
+}
+function navclickoff() {
+    var cx;
+  cx = setTimeout(function cxb() {
+    document.getElementById('dropclose').style.display = "none";
+  },290);
 }
 function navoff() {
     if (document.getElementById('dropcontent').style.display = "block") {
@@ -105,8 +116,7 @@ function navoff() {
   var w;
   w = setTimeout(function wb() {
     document.getElementById('dropcontent').style.animation = "";
-    document.getElementById('dropcontent').style.display = "none";
-    document.getElementById('dropclose').style.display = "none";
+    document.getElementById('dropcontent').style.display = "none"
   },250);
  }
 }
