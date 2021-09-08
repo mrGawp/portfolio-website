@@ -352,6 +352,7 @@ a {
   background: transparent;
   transition: 0.3s;
 }
+
 .hline {
   opacity: 0.5;
   margin-top: 12px;
@@ -360,7 +361,7 @@ a {
   float: right;
   border-radius: 2px;
   background: #fff;
-  transition: 0.45s;
+  transition: 0.25s;
 }
 /*github - mrgawp*/
 .dropdown {
@@ -455,12 +456,12 @@ to {opacity: 0; transform: translateX(40px);}
     float: right;
     border-radius: 2px;
     background: #fff;
-    transition: 0.45s;
+    transition: 0.25s;
   }
   .dropdown:hover .hline:nth-child(1) {width: 30px;}
   .dropdown:hover .hline:nth-child(2) {width: 35px;}
-  .dropdown:hover .hline:nth-child(3) {width: 40px;
-  }
+  .dropdown:hover .hline:nth-child(3) {width: 40px;}
+
   .dropdown-content a {
     color: #fff;
     text-transform: uppercase;
@@ -516,7 +517,7 @@ to {opacity: 0; transform: translateX(40px);}
   height: 400px;
   background:#131313;
   opacity: 1;
-  margin: 0;
+  margin: auto;
 }
 
 /*PAINT DROP---------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -535,8 +536,24 @@ to {opacity: 0; transform: translateX(40px);}
   width: 360px;
   height:360px;
   background:#6e5f5f;
-  animation: painthover 2.8s ease infinite;
+  transform: scale(0.75);
 }
+@media screen and (max-width: 850px) {
+  .drop-p {
+    border-radius: 50px;
+    display:flex;
+    align-content: center;
+    align-items:center;
+    justify-content:center;
+    border: 2px solid black;
+    position: relative;
+    float: right;
+    width: 360px;
+    height:360px;
+    background:#6e5f5f;
+    transform: scale(0.45);
+    }
+  }
 .drops {
   margin-bottom:165px;
   position: relative;
@@ -779,9 +796,4 @@ to {opacity: 0; transform: translateX(40px);}
 }
 .drop-p:hover .drop-text {
   opacity: 1;
-}
-@keyframes painthover {
-0% {transform: scale(0.75);}
-50% {transform: scale(0.76);}
-100% {transform: scale(0.75);}
 }

@@ -13,20 +13,20 @@
 </style>
 <body>
 
-
-  <div class="dropdown">
-    <div class="dropbtn" id="hamnav" onmouseover="navon()">
+  <div class="dropdown"onmouseover="navon()">
+    <div class="dropbtn" id="hamnav">
       <div class="hline"></div>
       <div class="hline"></div>
       <div class="hline"></div>
     </div>
-    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()">
+    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()" onclick="navoff()">
       <a href="#home">Home</a>
       <a href="#aboutme">About me</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
+
 
 
 
@@ -92,18 +92,21 @@
 <script>
 //ham nav
 function navon() {
-  document.getElementById('dropcontent').style.display = "block";
+    var cx;
+  cx = setTimeout(function cxb() {
+    document.getElementById('dropcontent').style.display = "block";
+  },300);
 }
 function navoff() {
+    if (document.getElementById('dropcontent').style.display = "block") {
   document.getElementById('dropcontent').style.animation = "linkoff 0.25s forwards";
   var w;
   w = setTimeout(function wb() {
     document.getElementById('dropcontent').style.animation = "";
     document.getElementById('dropcontent').style.display = "none";
   },250);
+ }
 }
-
-
 //load animation
 window.onload = setTimeout(function la() {
   document.getElementById('typer').style.animation = "l-flip 1s";
