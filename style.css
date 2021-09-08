@@ -513,7 +513,6 @@ to {opacity: 0; transform: translateX(40px);}
   transform-origin: right;
   transition: transform 0.3s ease-in;
   }
-    }
     .dropclose {
       display: none;
       position: absolute;
@@ -525,7 +524,7 @@ to {opacity: 0; transform: translateX(40px);}
       z-index: 3;
     }
     .dropdown:hover .dropclose{transform: rotate(-90deg) translateY(50px) translateX(10px);}
-
+  }
 /*SECTIONS-------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
 /*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/
