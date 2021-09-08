@@ -372,15 +372,27 @@ a {
   display: block;
   z-index: 2;
 }
+.dropclose {
+  display: none;
+  position: absolute;
+  margin-top:25px;
+  float: right;
+  height:60px;
+  width:90px;
+  background-color: transparent;
+  z-index: 3;
+}
+.dropdown:hover .dropclose{transform: rotate(-90deg) translateY(50px) translateX(10px);}
 
 .dropdown-content {
   opacity: 0.5;
   display: none;
-  padding-top: 150px;
+  margin-top:100px;
+  padding-top: 50px;
   position: relative;
   background-color: transparent;
   text-align: right;
-  width: 145px;
+  width: auto;
   height: auto;
   transition: 1s;
   padding-bottom: 50px;
@@ -479,11 +491,12 @@ to {opacity: 0; transform: translateX(40px);}
   .dropdown-content {
     opacity: 0.5;
     display: none;
-    padding-top: 80px;
+    margin-top:50px;
+    padding-top: 50px;
     position: relative;
     background-color: transparent;
     text-align: right;
-    width: 120px;
+    width: auto;
     height: auto;
     transition: 1s;
     padding-bottom: 50px;
@@ -501,6 +514,17 @@ to {opacity: 0; transform: translateX(40px);}
   transition: transform 0.3s ease-in;
   }
     }
+    .dropclose {
+      display: none;
+      position: absolute;
+      margin-top:25px;
+      float: right;
+      height:40px;
+      width:50px;
+      background-color: blue;
+      z-index: 3;
+    }
+    .dropdown:hover .dropclose{transform: rotate(-90deg) translateY(50px) translateX(10px);}
 
 /*SECTIONS-------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*//*SECTIONS*/

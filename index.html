@@ -14,12 +14,13 @@
 <body>
 
   <div class="dropdown"onmouseover="navon()">
+    <div class="dropclose" id="dropclose" onclick="navoff()"></div>
     <div class="dropbtn" id="hamnav">
       <div class="hline"></div>
       <div class="hline"></div>
       <div class="hline"></div>
     </div>
-    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()" onclick="navoff()">
+    <div class="dropdown-content" id="dropcontent" onmouseleave="navoff()">
       <a href="#home">Home</a>
       <a href="#aboutme">About me</a>
       <a href="#projects">Projects</a>
@@ -95,7 +96,8 @@ function navon() {
     var cx;
   cx = setTimeout(function cxb() {
     document.getElementById('dropcontent').style.display = "block";
-  },300);
+    document.getElementById('dropclose').style.display = "block";
+  },280);
 }
 function navoff() {
     if (document.getElementById('dropcontent').style.display = "block") {
@@ -104,6 +106,7 @@ function navoff() {
   w = setTimeout(function wb() {
     document.getElementById('dropcontent').style.animation = "";
     document.getElementById('dropcontent').style.display = "none";
+    document.getElementById('dropclose').style.display = "none";
   },250);
  }
 }
