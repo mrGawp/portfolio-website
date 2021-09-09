@@ -422,7 +422,7 @@ transform-origin: right;
 transition: transform 0.3s ease-in;
 }
 .dropdown-content a:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(0.9);
 }
 
 
@@ -513,6 +513,9 @@ to {opacity: 0; transform: translateX(40px);}
   transform-origin: right;
   transition: transform 0.3s ease-in;
   }
+  .dropdown-content a:hover::after {
+    transform: scaleX(0.82);
+  }
     .dropclose {
       display: none;
       position: fixed;
@@ -563,18 +566,7 @@ to {opacity: 0; transform: translateX(40px);}
 }
 @media screen and (max-width: 850px) {
   .drop-p {
-    border-radius: 50px;
-    display:flex;
-    align-content: center;
-    align-items:center;
-    justify-content:center;
-    border: 2px solid black;
-    position: relative;
-    float: right;
-    width: 360px;
-    height:360px;
-    background:#6e5f5f;
-    transform: scale(0.45);
+    transform: scale(0.26);
     }
   }
 .drops {
