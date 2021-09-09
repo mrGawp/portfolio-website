@@ -564,11 +564,6 @@ to {opacity: 0; transform: translateX(40px);}
   background:#6e5f5f;
   transform: scale(0.75);
 }
-@media screen and (max-width: 850px) {
-  .drop-p {
-    transform: scale(0.26);
-    }
-  }
 .drops {
   margin-bottom:165px;
   position: relative;
@@ -809,6 +804,9 @@ to {opacity: 0; transform: translateX(40px);}
   text-shadow: 1px 1px black;
   transition: opacity 1s;
 }
+@media screen and (max-width: 850px) {
+  .drop-p {transform: scale(0.38);}
+  }
 .drop-p:hover .drop-text {
   opacity: 1;
 }
