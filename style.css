@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb:hover {
   animation: anivpchange 4s forwards;
 }
 @keyframes anivpchange {
-  0% {opacity: 0; visibility: hidden;}
+  0% {opacity: 0.1; visibility: hidden;}
   40% {opacity: 0.1; visibility:visible;}
   100% {opacity: 1;}
 }
