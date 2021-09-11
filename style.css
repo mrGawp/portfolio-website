@@ -40,13 +40,9 @@ html::-webkit-scrollbar-thumb:hover {
   -moz-background-size: cover;
   background-size: cover;
   opacity: 0;
-  animation: anivpchange 4s forwards;
+  animation: anivpchange 4.5s forwards;
 }
-@keyframes anivpchange {
-  to {
-    opacity: 1;
-  }
-}
+@keyframes anivpchange {to {opacity: 1;}}
 .ani-p {
   display: flex;
   justify-content: center;
