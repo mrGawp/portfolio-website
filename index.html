@@ -33,14 +33,22 @@
 
 <div class="ani-pp" id="home">
   <div class="ani-p">
-    <div class="typer-p">
-    <div class="typer" id="typer">
-      <h1>	@<span style="color: #755dd4;">import </span>
-          <span style="color: aqua;">url</span>
-          &#40;<span style="color: #75d978">'</span><span style="color: aqua;">https://christianneeson.ca/</span><span style="color: #75d978">'</span>&#41;;
-        </h1>
+    <div class="typer-pp">
+      <div class="typer-p" id="typerrr">
+            <div class="tip" id="heaven1"><span>@</span></div>
+            <div class="tip" id="heaven2"><span id="heaven2s" style="color: #755dd4;">imp</span></div><div class="tip" id="heaven3"><span id="heaven3s" style="color: #755dd4;">ort </span></div>
+            <div class="tip" id="heaven4"><span id="heaven4s"style="color: aqua; margin-left:5px;"> url</span></div>
+            <div class="tip" id="heaven5"> &#40;<span id="heaven5s1" style="color: #75d978">'</span><span id="heaven5s2" style="color: aqua;">https://</span></div>
+            <div class="tip" id="heaven6"><span id="heaven6s" style="color: aqua;">christianne</span></div>
+            <div class="tip" id="heaven7"><span id="heaven7s" style="color: aqua;">eson.ca/</span></div>
+            <div class="tip" id="heaven8"><span id="heaven8s" style="color: #75d978">'</span>&#41;;</div> 
+          </div>
+      </div>
+  
+    <div class="loadbar" id="loadbar">
+        <div class="loader">
+      </div>
     </div>
-  </div>
   <div class="typewriter" id="typewriter">
     <h1>	&#60;<span style="color: #f54257;">script</span>&#62;
         <span style="color: #f54257;">console</span>.<span style="color: #4f71e8;">log</span>(<span style="color: #75d978;">"hello world"</span>);
@@ -49,16 +57,19 @@
 <div class="loading-h" id="loading-h"></div>
 <h1 class="synerr" id="synerr"> ✕ Uncaught Syntax Error</h1>
 <img class="ani-img" id="ani-img" src=""/>
-<div class="loadbar" id="loadbar">
-    <div class="loader">
-      </div>
-  </div>
-<div class="pdot-pp" id="pdot">
-<div class="pdot-p" onclick="homepc()">
-  <h1 class="ph1">Hello World!</h1>
-<h1 class="ph2">I'm Chris, Web Developer.</h1>
-  </div>
+  <div class="ufo" id="ufo"><span> 🛸︁</span></div>
+  <div class="pdot-pp" id="pdot">
+    <div class="pdot-p">
+<div class="ph1"><span>H</span></div><div class="ph1"><span>E</span></div><div class="ph1"><span>L</span></div><div class="ph1"><span>L</span></div><div class="ph1"><span>O</span></div>
+<div class="ph1"onmouseover="won()" onmouseleave="woff()"><span>W</span></div><div class="ph1"><span>O</span></div><div class="ph1"><span>R</span></div><div class="ph1"><span>L</span></div><div class="ph1"><span>D</span></div><div class="ph1"><span>!</span></div> <br>
+<div class="ph2"><span>I</span></div><div class="ph2"><span>'</span></div><div class="ph2"><span>M</span></div>
+<div class="ph2"><span>C</span></div><div class="ph2"><span>H</span></div><div class="ph2"><span>R</span></div><div class="ph2"><span>I</span></div><div class="ph2"><span>S</span></div><div class="ph2"><span>,</span></div>
+<div class="ph2"><span>W</span></div><div class="ph2"><span>E</span></div><div class="ph2"><span>B</span></div>
+<div class="ph2"><span>D</span></div><div class="ph2"><span>E</span></div><div class="ph2"><span>V</span></div><div class="ph2"><span>E</span></div><div class="ph2"><span>L</span></div><div class="ph2"><span>O</span></div><div class="ph2"><span>P</span></div><div class="ph2"><span>E</span></div><div class="ph2"><span>R</span></div><div class="ph2"><span>.</span></div>
+
+</div>
     </div>
+
   <a id="clicker" class="clicker"href="#">^</a>
   </div>
 </div>
@@ -91,6 +102,14 @@
 <h1>test test test</h1>
 
 <script>
+//ufo w
+function won() {
+  document.getElementById('ufo').style.display = "inline-block";
+}
+function woff() {
+  document.getElementById('ufo').style.display = "none";
+}
+
 //ham nav
 function navon() {
     var cx;
@@ -120,25 +139,48 @@ function navoff() {
   },250);
  }
 }
+
+
 //load animation
+window.onload = document.getElementById('typerrr').classList.add("typer-p-r");
+
 window.onload = setTimeout(function la() {
-  document.getElementById('typer').style.animation = "l-flip 1s";
-},3200);
+    document.getElementById('typerrr').style.overflow = "visible";
+    document.getElementById('typerrr').classList.remove("typer-p-r");
+  document.getElementById('heaven1').style.animation = "heaven-effect1 3s forwards";
+  document.getElementById('heaven2').style.animation = "heaven-effect2 3s forwards";
+  document.getElementById('heaven2s').style.animation = "heaven-effect2 3s forwards";
+  document.getElementById('heaven3').style.animation = "heaven-effect1 3s forwards";
+  document.getElementById('heaven3s').style.animation = "heaven-effect1 3s forwards";
+  document.getElementById('heaven4').style.animation = "heaven-effect4 3s forwards";
+  document.getElementById('heaven4s').style.animation = "heaven-effect4 3s forwards";
+  document.getElementById('heaven5').style.animation = "heaven-effect2 3s forwards";
+  document.getElementById('heaven5s1').style.animation = "heaven-effect2 3s forwards";
+  document.getElementById('heaven5s2').style.animation = "heaven-effect2 3s forwards";
+  document.getElementById('heaven6').style.animation = "heaven-effect4 3s forwards";
+  document.getElementById('heaven6s').style.animation = "heaven-effect4 3s forwards";
+  document.getElementById('heaven7').style.animation = "heaven-effect3 3s forwards";
+  document.getElementById('heaven7s').style.animation = "heaven-effect3 3s forwards";
+  document.getElementById('heaven8').style.animation = "heaven-effect1 3s forwards";
+  document.getElementById('heaven8s').style.animation = "heaven-effect1 3s forwards";
+},5400);
 window.onload = setTimeout(function lb() {
-  document.getElementById('typer').style.visibility = "hidden";
-  document.getElementById('loadbar').style.visibility = "visible";
-},3700);
-window.onload = setTimeout(function lc() {
-  document.getElementById('loadbar').style.animation = "lb-gone 1s";
+    document.getElementById('loadbar').style.visibility = "hidden";
   document.getElementById('clicker').style.visibility = "visible";
-  document.getElementById('clicker').style.animation = "load-change-c 0.8s";
-},6000);
-window.onload = setTimeout(function ld() {
-  document.getElementById('loadbar').style.visibility = "hidden";
+  document.getElementById('clicker').style.animation = "load-change-c 1.8s";
   document.getElementById('pdot').style.animation = "load-change 6s";
   document.getElementById('pdot').style.visibility = "visible";
+  document.getElementById('home').classList.add("ani-vp");
+},7000);
+window.onload = setTimeout(function lc() {
+  document.getElementById('typerrr').style.visibility = "hidden";
+  document.getElementById('home').style.visibility = "visible";
+},7400);
+window.onload = setTimeout(function ld() {
   document.getElementById('clicker').style.animation = "floating 3s infinite";
-},6800);
+},8300);
+
+
 
 // click animation
   function homepc() {
