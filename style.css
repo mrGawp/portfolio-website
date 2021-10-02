@@ -57,6 +57,11 @@ body {
   @media screen and (max-width: 850px) {
     .ani-vp {
     background-image: url('bgbmobile.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    overflow: visible;
     }
   }
   .ani-p .bg {
