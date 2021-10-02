@@ -115,13 +115,7 @@ var bg1 = document.getElementById("bg1");
 var bg2 = document.getElementById("bg2");
 var btext = document.getElementById("p-g");
 
-window.addEventListener('scroll', function() {
-    var value = window.scrollY;
 
-    bg1.style.top = value * 0.3 + 'px';
-    bg2.style.top = value * 0.6 + 'px';
-    btext.style.top = value * 0.6 + 'px';
-})
 
 
 //ufo w
@@ -164,8 +158,15 @@ window.onload = setTimeout(function lb() {
   document.getElementById('pdot').style.animation = "load-change 6s";
   document.getElementById('pdot').style.visibility = "visible";
   document.getElementById('home').classList.add("ani-vp");
-  document.getElementById('bg1').style.display = "block";
+  function myFunction(x) {
+  if (x.matches) {
+  document.getElementById('bg1').style.display = "none";
+  document.getElementById('bg2').style.display = "none";
+  } else {
+    document.getElementById('bg1').style.display = "block";
   document.getElementById('bg2').style.display = "block";
+    }
+  }
 },7000);
 window.onload = setTimeout(function lc() {
   document.getElementById('typerrr').style.visibility = "hidden";
@@ -174,6 +175,33 @@ window.onload = setTimeout(function ld() {
   document.getElementById('clicker').style.animation = "floating 3s infinite";
 },8300);
 
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("bg1").style.display = "none";
+    document.getElementById("bg2").style.display = "none";
+    window.addEventListener('scroll', function() {
+    var value = window.scrollY;
+    btext.style.top = value * 0 + 'px';
+})
+
+  } else {
+    window.addEventListener('scroll', function() {
+    var value = window.scrollY;
+    bg1.style.top = value * 0.3 + 'px';
+    bg2.style.top = value * 0.6 + 'px';
+    btext.style.top = value * 0.55 + 'px';
+})
+  document.getElementById('bg1').style.display = "block";
+  document.getElementById('bg2').style.display = "block";
+  document.getElementById('bg1').style.animation = "none";
+  document.getElementById('bg2').style.animation = "none";
+  }
+}
+
+var x = window.matchMedia("(max-width: 850px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 
 //ham nav
