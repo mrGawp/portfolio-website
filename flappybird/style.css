@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  overflow: hidden;
+}
+header {
+  margin: 0 auto;
+  width: 215px;
+  font-size: 7px;
+  font-weight: 600;
+}
+.score-container {
+  display: flex;
+  justify-content: left;
+  padding: 28px 9px;
+  background: #5EE270;
+}
+#bestScore {
+  margin-right:10px;
+}
+canvas {
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  margin-top:-180px;
+  margin-left:-110px;
+}

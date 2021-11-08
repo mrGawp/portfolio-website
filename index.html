@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <link rel="stylesheet" href="style.css">
 <title>Christian - Web Developer - v0.4</title>
-<link rel="shortcut icon" href="c.png">
+<link rel="shortcut icon" href="/C.png">
+<link rel="apple-touch-icon" href="/C.png"/>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -41,20 +43,20 @@
                   <div class="header-le"><a  href="#contact" id="contactdesk">Contact</a></div>
             </div>
   </div>
-  <a class="dropclose" id="dropclose" onclick="navoff();navclickoff();" href="#none"></a>
-        <div class="dropdown" onmouseleave="navoff();navclickoff();">
-          <div class="dropbtn" id="hamnav" onmouseover="navon()" onclick="navclick()">
-            <div class="hline"></div>
-            <div class="hline"></div>
-            <div class="hline"></div>
-          </div>
-          <div class="dropdown-content" id="dropcontent">
-            <a href="#home">Home</a>
-            <a href="#aboutme">About me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
+  <div class="hamp-gdad">
+    <div class="hamp" id="hamp">
+        <input type="checkbox" id="hamcheck" onclick="hamnav()">
+        <span class="hline" id="hl1"></span>
+        <span class="hline" id="hl2"></span>
+        <span class="hline" id="hl3"></span>
+    </div>
+</div>
+<div class="dropdown-content" id="dropcontent">
+    <a href="#home">Home</a>
+    <a href="#aboutme">About me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 
 
 
@@ -96,11 +98,549 @@
   <a id="clicker" class="clicker" href="#aboutme">^</a>
   </div>
 </div>
+<svg id="stack-wave1" class="lay-waves" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 164L129 86L257 119L386 87L514 156L643 115L771 146L900 60L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#101010"></path><path d="M0 157L129 142L257 101L386 91L514 189L643 176L771 110L900 139L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#151515"></path><path d="M0 124L129 213L257 205L386 148L514 219L643 128L771 156L900 158L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#191919"></path><path d="M0 180L129 180L257 186L386 219L514 184L643 227L771 223L900 193L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#1d1d1d"></path><path d="M0 216L129 216L257 255L386 229L514 257L643 231L771 219L900 227L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#212121"></path></svg>
 
-<svg id="stack-wave1" class="lay-waves" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 117L129 139L257 114L386 118L514 85L643 77L771 138L900 97L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#181818"></path><path d="M0 142L129 163L257 129L386 113L514 161L643 151L771 179L900 156L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#1e1e1e"></path><path d="M0 172L129 159L257 184L386 168L514 163L643 157L771 199L900 195L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#252525"></path><path d="M0 193L129 205L257 210L386 187L514 194L643 231L771 209L900 213L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#2c2c2c"></path><path d="M0 226L129 247L257 232L386 252L514 256L643 241L771 263L900 260L900 301L771 301L643 301L514 301L386 301L257 301L129 301L0 301Z" fill="#333333"></path></svg>
+<section class="sec1" id="aboutme">
+      
+  <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<g transform="translate(415.80461781403665 283.23082947206046)"><path id="blob1" d="M166.7 -172.2C204.2 -129.2 214.6 -64.6 216.5 1.9C218.4 68.4 211.7 136.7 174.2 186.7C136.7 236.7 68.4 268.4 10.1 258.2C-48.1 248.1 -96.2 196.2 -122.2 146.2C-148.2 96.2 -152.1 48.1 -145.7 6.4C-139.4 -35.4 -122.7 -70.7 -96.7 -113.7C-70.7 -156.7 -35.4 -207.4 14.6 -222C64.6 -236.6 129.2 -215.2 166.7 -172.2" fill="#000"></path></g>
+<g transform="translate(427.9725857651774 332.15419185920064)" style="visibility: hidden;"><path id="blob2" d="M141.3 -146.6C186 -96.6 227 -48.3 220.5 -6.5C214 35.4 160 70.7 115.4 108.7C70.7 146.7 35.4 187.4 -3.1 190.4C-41.5 193.5 -83 159 -113.1 121C-143.3 83 -162.2 41.5 -171.6 -9.4C-181 -60.3 -181 -120.7 -150.8 -170.7C-120.7 -220.7 -60.3 -260.3 -6 -254.3C48.3 -248.3 96.6 -196.6 141.3 -146.6" fill="#000"></path></g>
+</svg>
+  
+<svg class="blob-motionsmall" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(461.0745962343524 340.8049620031951)"><path d="M167.3 -176.8C207.8 -126.8 225.4 -63.4 211.4 -14C197.4 35.4 151.7 70.7 111.2 101.9C70.7 133 35.4 160 -12.8 172.9C-61 185.7 -122.1 184.4 -166.4 153.3C-210.8 122.1 -238.4 61 -238.3 0.1C-238.1 -60.8 -210.3 -121.6 -166 -171.6C-121.6 -221.6 -60.8 -260.8 1.3 -262.1C63.4 -263.4 126.8 -226.8 167.3 -176.8" fill="#000"></path></g></svg>
 
 
-<h1 id="aboutme">test test test</h1><br><br><br><br>
+    <div class="sec1-part1">
+      <div class="sec1-part1-t"><h3>General</h3></div>
+  <div class="sec1-part1-i1"><h1>About Me</h1></div>
+  <div class="sec1-part1-im">
+    <p>Hey, my name is Christian Neeson. I’m a young talented developer from Ottawa, ON. Check my phone or below to 
+      learn more.
+      <p></div>
+  <div class="sec1-part1-i2">
+    <h2>Technology Belt</h2>
+    <p>Very strong knowledge of HTML and CSS with 4 years of experience.
+      Strong knowledge of javascript and javascript frameworks, with certification and 3 years of experience.
+      Certification in business programming with 1 year of COBOL experience.      
+      <p>
+      </div>
+
+    </div>
+    <div class="sec1-part2">
+      
+  <!--PHONE
+  ALOT OF HTML
+  ------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------
+  -->
+  
+  <div class="phone-container">
+    <div class="phone-top"></div>
+    <div class="phone-top-line"></div>
+    <div class="phone-sound-ringer"></div>
+    <div class="phone-sound-up"></div>
+    <div class="phone-sound-down"></div>
+    <div class="phone-sound-power"></div>
+    <div class="phone-border"></div>
+    <div class="phone-screen" id="phone-screen">
+  
+        <div class="phone-headerr" id="phone-headerr">
+          <svg id="location-white" class="header-loaction" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M444.52 3.51999L28.74 195.42C-19.23 217.81 -3.24001 288.17 47.93 288.17H223.84V464.08C223.84 515.25 294.2 531.25 316.59 483.27L508.49 67.49C524.48 29.1 482.9 -12.48 444.52 3.51999Z" fill="white"/>
+            </svg>
+  
+        <svg id="battery-white" class="header-battery" width="640" height="512" viewBox="0 0 640 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M544 160V224H576V288H544V352H64V160H544ZM560 96H48C21.49 96 0 117.49 0 144V368C0 394.51 21.49 416 48 416H560C586.51 416 608 394.51 608 368V352H616C629.255 352 640 341.255 640 328V184C640 170.745 629.255 160 616 160H608V144C608 117.49 586.51 96 560 96ZM416 192H96V320H416V192Z" fill="white"/>
+          </svg>
+  
+          <p id="hours"></p><p>:</p><p id="minutes"></p>  
+            </div>
+          <div class="phone-headerl" id="phone-headerl">
+            <svg id="signal-white" class="header-signal" width="69" height="71" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M62.1 0C65.918 0 69 2.97313 69 6.65625V64.3438C69 68.0269 65.918 71 62.1 71C58.282 71 55.2 68.0269 55.2 64.3438V6.65625C55.2 2.97313 58.282 0 62.1 0ZM6.9 44.375C10.718 44.375 13.8 47.3481 13.8 51.0312V64.3438C13.8 68.0269 10.718 71 6.9 71C3.082 71 0 68.0269 0 64.3438V51.0312C0 47.3481 3.082 44.375 6.9 44.375ZM34.5 22.1875C38.318 22.1875 41.4 25.1606 41.4 28.8438V64.3438C41.4 68.0269 38.318 71 34.5 71C30.682 71 27.6 68.0269 27.6 64.3438V28.8438C27.6 25.1606 30.682 22.1875 34.5 22.1875Z" fill="white"/>
+              </svg>
+  
+            
+            </svg>
+              <p>Service</p>
+              <svg id="wifi-white"  class="header-wifi" width="640" height="512" viewBox="0 0 640 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M634.91 154.88C457.74 -8.99 182.19 -8.93 5.09 154.88C-1.57 161.04 -1.7 171.47 4.74 177.86L38.98 211.83C45.12 217.93 55 218.06 61.38 212.21C207.3 78.53 432.68 78.5 578.63 212.21C585.01 218.06 594.89 217.92 601.03 211.83L635.27 177.86C641.7 171.47 641.57 161.04 634.91 154.88ZM320 352C284.65 352 256 380.65 256 416C256 451.35 284.65 480 320 480C355.35 480 384 451.35 384 416C384 380.65 355.35 352 320 352ZM522.67 268.41C407.41 166.48 232.46 166.59 117.33 268.41C110.43 274.51 110.21 285.1 116.76 291.56L151.2 325.55C157.2 331.47 166.86 331.87 173.25 326.35C257.2 253.78 382.99 253.94 466.74 326.35C473.13 331.87 482.79 331.48 488.79 325.55L523.23 291.56C529.79 285.1 529.56 274.5 522.67 268.41V268.41Z" fill="white"/>
+              </svg>
+  
+          </div>
+  
+  
+          <div class="phone-headerrb" id="phone-headerrb">    
+  
+  <svg id="location-black" class="header-loaction" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-arrow" class="svg-inline--fa fa-location-arrow fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>          
+  <svg id="battery-black" class="header-battery" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="battery-three-quarters" class="svg-inline--fa fa-battery-three-quarters fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#000" d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-144 96H96v128h320V192z"></path></svg>
+            <p id="hoursb"></p><p>:</p><p id="minutesb"></p>  
+  
+              </div>
+            <div class="phone-headerlb" id="phone-headerlb">
+  
+  <svg class="header-signal" id="signal-black" width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>signal_cellular_alt</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Rounded" transform="translate(-309.000000, -1840.000000)">
+          <g id="Device" transform="translate(100.000000, 1650.000000)">
+              <g id="Round-/-Device-/-signal_cellular_alt" transform="translate(204.000000, 186.000000)">
+                  <g>
+                      <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                      <path d="M18.5,4 C19.33,4 20,4.67 20,5.5 L20,18.5 C20,19.33 19.33,20 18.5,20 C17.67,20 17,19.33 17,18.5 L17,5.5 C17,4.67 17.67,4 18.5,4 Z M6.5,14 C7.33,14 8,14.67 8,15.5 L8,18.5 C8,19.33 7.33,20 6.5,20 C5.67,20 5,19.33 5,18.5 L5,15.5 C5,14.67 5.67,14 6.5,14 Z M12.5,9 C13.33,9 14,9.67 14,10.5 L14,18.5 C14,19.33 13.33,20 12.5,20 C11.67,20 11,19.33 11,18.5 L11,10.5 C11,9.67 11.67,9 12.5,9 Z" id="🔹-Icon-Color" fill="#000"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </g>
+  </svg>
+                <p>Service</p>
+  <svg id="wifi-black" class="header-wifi" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wifi" class="svg-inline--fa fa-wifi fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z"></path></svg>
+            </div>
+  
+  
+  <div class="phone-spacer">
+      <div onclick="settingson()" class="settings-p">
+        <svg class="settings-svg" width="417" height="436" viewBox="0 0 417 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M208.5 272.5C237.288 272.5 260.625 248.1 260.625 218C260.625 187.9 237.288 163.5 208.5 163.5C179.712 163.5 156.375 187.9 156.375 218C156.375 248.1 179.712 272.5 208.5 272.5Z" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="settings-svgm" d="M337.075 272.5C334.762 277.979 334.072 284.058 335.094 289.951C336.116 295.844 338.803 301.282 342.809 305.563L343.851 306.653C347.082 310.028 349.645 314.035 351.394 318.446C353.143 322.856 354.043 327.584 354.043 332.359C354.043 337.134 353.143 341.862 351.394 346.273C349.645 350.683 347.082 354.691 343.851 358.065C340.624 361.443 336.791 364.123 332.573 365.951C328.354 367.78 323.832 368.721 319.266 368.721C314.699 368.721 310.177 367.78 305.958 365.951C301.74 364.123 297.907 361.443 294.68 358.065L293.637 356.975C289.543 352.787 284.342 349.977 278.705 348.909C273.069 347.84 267.256 348.562 262.015 350.98C256.876 353.283 252.493 357.107 249.406 361.981C246.319 366.854 244.662 372.566 244.64 378.412V381.5C244.64 391.136 240.979 400.378 234.462 407.192C227.945 414.005 219.106 417.833 209.89 417.833C200.674 417.833 191.835 414.005 185.318 407.192C178.801 400.378 175.14 391.136 175.14 381.5V379.865C175.005 373.852 173.144 368.02 169.797 363.128C166.451 358.236 161.774 354.509 156.375 352.433C151.134 350.015 145.321 349.294 139.685 350.362C134.048 351.431 128.847 354.24 124.752 358.428L123.71 359.518C120.483 362.896 116.65 365.576 112.432 367.405C108.213 369.233 103.691 370.174 99.1244 370.174C94.5577 370.174 90.0358 369.233 85.8172 367.405C81.5986 365.576 77.7661 362.896 74.5387 359.518C71.3078 356.144 68.7447 352.137 66.9959 347.726C65.2472 343.315 64.347 338.587 64.347 333.812C64.347 329.038 65.2472 324.31 66.9959 319.899C68.7447 315.488 71.3078 311.481 74.5387 308.107L75.5812 307.017C79.5868 302.735 82.2738 297.297 83.2958 291.404C84.3178 285.511 83.6279 279.433 81.315 273.953C79.1125 268.58 75.4554 263.998 70.7938 260.77C66.1323 257.542 60.6698 255.81 55.0788 255.787H52.125C42.9087 255.787 34.0699 251.959 27.553 245.145C21.0362 238.331 17.375 229.09 17.375 219.453C17.375 209.817 21.0362 200.576 27.553 193.762C34.0699 186.948 42.9087 183.12 52.125 183.12H53.6887C59.4398 182.979 65.0173 181.033 69.6963 177.534C74.3753 174.035 77.9393 169.145 79.925 163.5C82.2379 158.021 82.9278 151.942 81.9058 146.049C80.8839 140.156 78.1968 134.718 74.1912 130.437L73.1488 129.347C69.9178 125.972 67.3547 121.965 65.6059 117.554C63.8572 113.144 62.957 108.416 62.957 103.641C62.957 98.8661 63.8572 94.1381 65.6059 89.7273C67.3547 85.3165 69.9178 81.3094 73.1488 77.935C76.3761 74.5569 80.2086 71.8769 84.4272 70.0485C88.6458 68.22 93.1677 67.2789 97.7344 67.2789C102.301 67.2789 106.823 68.22 111.042 70.0485C115.26 71.8769 119.093 74.5569 122.32 77.935L123.362 79.025C127.457 83.2131 132.658 86.0225 138.295 87.0911C143.931 88.1596 149.744 87.4383 154.985 85.02H156.375C161.514 82.7171 165.897 78.8934 168.984 74.0195C172.071 69.1455 173.728 63.4341 173.75 57.5883V54.5C173.75 44.8638 177.411 35.6223 183.928 28.8085C190.445 21.9946 199.284 18.1667 208.5 18.1667C217.716 18.1667 226.555 21.9946 233.072 28.8085C239.589 35.6223 243.25 44.8638 243.25 54.5V56.135C243.272 61.9808 244.929 67.6922 248.016 72.5661C251.103 77.4401 255.486 81.2638 260.625 83.5667C265.866 85.9849 271.679 86.7063 277.315 85.6377C282.952 84.5692 288.153 81.7598 292.247 77.5717L293.29 76.4817C296.517 73.1035 300.35 70.4236 304.568 68.5952C308.787 66.7667 313.309 65.8256 317.876 65.8256C322.442 65.8256 326.964 66.7667 331.183 68.5952C335.401 70.4236 339.234 73.1035 342.461 76.4817C345.692 79.8561 348.255 83.8632 350.004 88.274C351.753 92.6848 352.653 97.4127 352.653 102.187C352.653 106.962 351.753 111.69 350.004 116.101C348.255 120.512 345.692 124.519 342.461 127.893L341.419 128.983C337.413 133.265 334.726 138.703 333.704 144.596C332.682 150.489 333.372 156.567 335.685 162.047V163.5C337.887 168.873 341.545 173.456 346.206 176.683C350.868 179.911 356.33 181.643 361.921 181.667H364.875C374.091 181.667 382.93 185.495 389.447 192.308C395.964 199.122 399.625 208.364 399.625 218C399.625 227.636 395.964 236.878 389.447 243.692C382.93 250.505 374.091 254.333 364.875 254.333H363.311C357.72 254.357 352.258 256.089 347.596 259.317C342.935 262.544 339.277 267.127 337.075 272.5V272.5Z" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          </svg>
+          <p>Settings</p>
+          </div>
+          <div class="settings-page" id="settings-page">
+            <div class="phone-x" onclick="settingsoff()">
+              <p>&#10006;</p>
+            </div>
+            <div class="settingspage-p">
+              <h1>Settings</h1>
+              <fieldset>
+              <legend><h2>Wallpapers</h2></legend>
+              <div class="s-background" onclick="settingsbdefault()">
+                <div class="sbimg"><img src="phonebackgrounds/default.jpg"></div><p>Default</p>
+              </div>
+              <div class="s-background" onclick="settingsbspace()">
+                <div class="sbimg"><img src="/phonebackgrounds/space.jpg"></div><p>Space</p>
+              </div>
+              <div class="s-background" onclick="settingsbmountains()">
+                <div class="sbimg"><img src="/phonebackgrounds/mountain.jpeg"></div><p>Mountains</p>
+              </div>
+              <div class="s-background" onclick="settingsbocean()">
+                <div class="sbimg"><img src="/phonebackgrounds/ocean.jpg"></div><p>Ocean</p>
+              </div>
+            </fieldset>
+            </div>
+          </div>
+  
+  
+      <div class="weather-p" onclick="weatheron()" >
+        <svg class="weather-svg" width="418" height="457" viewBox="0 0 418 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M365.75 321.328C393.116 321.328 411.469 301.263 411.469 271.344C411.469 241.432 393.116 207.078 365.75 207.078C365.75 132.28 303.54 78.5469 235.125 78.5469C174.574 78.5469 121.821 122.897 111.031 185.656C111.031 185.656 102.985 185.656 97.9688 185.656C63.7581 185.656 39.1875 219.66 39.1875 257.062C39.1875 294.465 63.7581 321.328 97.9688 321.328" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M195.931 83.9166C181.523 71.6062 163.392 64.2656 143.688 64.2656C96.7931 64.2656 58.7812 105.824 58.7812 157.094C58.7812 175.495 63.3988 185.506 71.8438 199.938" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M39.1875 157.094H0" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M143.688 42.8438V0" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M65.3125 71.4062L26.125 28.5625" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M176.344 414.156C176.344 433.872 190.961 449.859 209 449.859C227.039 449.859 241.656 433.872 241.656 414.156C241.656 394.441 227.039 378.453 209 378.453H13.0625" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          <path d="M261.25 314.188C261.25 294.472 275.867 278.484 293.906 278.484C311.946 278.484 326.562 294.472 326.562 314.188C326.562 333.903 311.946 349.891 293.906 349.891H26.125" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+          </svg> 
+          <p>Weather</p> 
+      </div>
+      <div id="weather-page" class="weather-page">
+        <div class="card">
+          <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><svg class="searchicon" stroke="currentColor" fill="#fff" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                </path>
+              </svg></button>
+          </div>
+          <div class="weather loading">
+            <div class="flexcity">
+            <h2 class="city">Ottawa</h2>
+            <svg class="cityicon" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M444.52 3.51999L28.74 195.42C-19.23 217.81 -3.24001 288.17 47.93 288.17H223.84V464.08C223.84 515.25 294.2 531.25 316.59 483.27L508.49 67.49C524.48 29.1 482.9 -12.48 444.52 3.51999Z" fill="white"/>
+              </svg>
+          </div>
+            <h1 class="temp">-18.77°C</h1>
+            <h1 class="feelslike">Feels Like: -32.77°c</h1>
+            <div class="flex">
+              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+              <div class="description">Cloudy</div>
+            </div>
+            <div class="flexhl">
+              <div class="high">H: -12.23°c</div>
+              <div class="low">L: -22.23°c</div>
+            </div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind speed: 6.2 km/h</div>
+          </div>
+        </div>
+        <svg class="lay-waves-weather" id="visual" viewBox="0 0 600 900" width="600" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 305L14.3 327.3C28.7 349.7 57.3 394.3 85.8 392.5C114.3 390.7 142.7 342.3 171.2 315.8C199.7 289.3 228.3 284.7 257 280.7C285.7 276.7 314.3 273.3 343 258.3C371.7 243.3 400.3 216.7 428.8 211.2C457.3 205.7 485.7 221.3 514.2 245.7C542.7 270 571.3 303 585.7 319.5L600 336L600 901L585.7 901C571.3 901 542.7 901 514.2 901C485.7 901 457.3 901 428.8 901C400.3 901 371.7 901 343 901C314.3 901 285.7 901 257 901C228.3 901 199.7 901 171.2 901C142.7 901 114.3 901 85.8 901C57.3 901 28.7 901 14.3 901L0 901Z" fill="#ffffff"></path><path d="M0 369L14.3 386C28.7 403 57.3 437 85.8 444.7C114.3 452.3 142.7 433.7 171.2 421.8C199.7 410 228.3 405 257 408.2C285.7 411.3 314.3 422.7 343 411.7C371.7 400.7 400.3 367.3 428.8 355.3C457.3 343.3 485.7 352.7 514.2 375.5C542.7 398.3 571.3 434.7 585.7 452.8L600 471L600 901L585.7 901C571.3 901 542.7 901 514.2 901C485.7 901 457.3 901 428.8 901C400.3 901 371.7 901 343 901C314.3 901 285.7 901 257 901C228.3 901 199.7 901 171.2 901C142.7 901 114.3 901 85.8 901C57.3 901 28.7 901 14.3 901L0 901Z" fill="#dcdfff"></path><path d="M0 528L14.3 514.5C28.7 501 57.3 474 85.8 463.3C114.3 452.7 142.7 458.3 171.2 465.8C199.7 473.3 228.3 482.7 257 494.2C285.7 505.7 314.3 519.3 343 530.7C371.7 542 400.3 551 428.8 566.7C457.3 582.3 485.7 604.7 514.2 605.8C542.7 607 571.3 587 585.7 577L600 567L600 901L585.7 901C571.3 901 542.7 901 514.2 901C485.7 901 457.3 901 428.8 901C400.3 901 371.7 901 343 901C314.3 901 285.7 901 257 901C228.3 901 199.7 901 171.2 901C142.7 901 114.3 901 85.8 901C57.3 901 28.7 901 14.3 901L0 901Z" fill="#b6c0ff"></path><path d="M0 632L14.3 639.8C28.7 647.7 57.3 663.3 85.8 654.8C114.3 646.3 142.7 613.7 171.2 600.2C199.7 586.7 228.3 592.3 257 596.3C285.7 600.3 314.3 602.7 343 602.8C371.7 603 400.3 601 428.8 603.5C457.3 606 485.7 613 514.2 624.5C542.7 636 571.3 652 585.7 660L600 668L600 901L585.7 901C571.3 901 542.7 901 514.2 901C485.7 901 457.3 901 428.8 901C400.3 901 371.7 901 343 901C314.3 901 285.7 901 257 901C228.3 901 199.7 901 171.2 901C142.7 901 114.3 901 85.8 901C57.3 901 28.7 901 14.3 901L0 901Z" fill="#8ba2ff"></path><path d="M0 694L14.3 708C28.7 722 57.3 750 85.8 769.7C114.3 789.3 142.7 800.7 171.2 787.7C199.7 774.7 228.3 737.3 257 719.7C285.7 702 314.3 704 343 702.8C371.7 701.7 400.3 697.3 428.8 715C457.3 732.7 485.7 772.3 514.2 793.2C542.7 814 571.3 816 585.7 817L600 818L600 901L585.7 901C571.3 901 542.7 901 514.2 901C485.7 901 457.3 901 428.8 901C400.3 901 371.7 901 343 901C314.3 901 285.7 901 257 901C228.3 901 199.7 901 171.2 901C142.7 901 114.3 901 85.8 901C57.3 901 28.7 901 14.3 901L0 901Z" fill="#5085ff"></path></svg>
+        <div class="phone-x" onclick="weatheroff()">
+          <p>&#10006;</p>
+          </div>
+        </div>
+  
+      <div onclick="flappyon()" class="flappy-p">
+        <img class="flappy-img" src="flappy.png">
+          <p>Flappy Bird</p> 
+      </div>        
+      <div id="flappy-page" class="flappy-page"><iframe src="flappybird/index.html"></iframe>
+        <div class="phone-x" onclick="flappyoff()">
+          <p>&#10006;</p>
+          </div>
+        </div>
+  
+        <div onclick="clockon()" class="clock-p">
+          <svg class="clock-svg" focusable="false" data-prefix="far" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fff" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+          <p>Clock</p> 
+      </div>  
+      <div class="clockpage" id="clock-page">
+        <div class="clock">
+          <div class="hour">
+              <div class="hr" id="hr"></div>
+          </div>
+          <div class="min">
+              <div class="mn" id="mn"></div>
+          </div>
+          <div class="sec">
+              <div class="sc" id="sc"></div>
+          </div>
+      </div>
+        <div class="phone-x" id="phone-x" onclick="clockoff()">
+          <p>&#10006;</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="phone-spacer-bot">
+        <a href="https://github.com/mrGawp/" target="_blank" rel="noopener noreferrer"><div class="github-p">
+        <svg class="github-svg" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+          <g>
+              <path d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z" fill="#fff"></path>
+          </g>
+      </svg>
+        <p>GitHub</p>
+      </div>
+    </a>
+    <a href="https://codepen.io/mrgawp/" target="_blank" rel="noopener noreferrer"><div class="codepen-p">
+        <svg class="codepen-svg" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
+        <p>Codepen</p>
+      </div>
+      </a>
+    </div>
+  <div class="phone-bottom">
+  <div class="mesn-p" onclick="mesnon()">
+  <svg class="mesn-svg " width="126" height="122" viewBox="0 0 126 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M104.606 14.8917C92.8042 5.44842 78.1148 0.348659 63 0.447089C28.3653 0.447089 0.289642 26.1358 0.289642 57.8246C0.289642 57.9788 0.289642 58.1369 0.293502 58.2912C0.289642 58.3644 0.289642 58.4338 0.289642 58.5071C0.293781 63.5906 1.09129 68.6424 2.65338 73.48C2.68423 73.5841 2.71895 73.6921 2.75364 73.8C5.30139 81.7515 9.59809 89.0313 15.3281 95.1045C16.2985 99.3866 16.1722 103.844 14.9609 108.065C13.7496 112.285 11.4925 116.131 8.39885 119.247C8.20993 119.436 8.08118 119.676 8.02887 119.938C7.97656 120.2 8.00305 120.471 8.10498 120.718C8.20691 120.965 8.37971 121.176 8.60154 121.324C8.82337 121.473 9.08427 121.553 9.35127 121.553C19.6901 121.513 29.6177 117.499 37.0799 110.343L37.265 110.166C45.4307 113.515 54.1744 115.227 63 115.206C82.1027 115.206 99.208 107.39 110.71 95.0621C120.278 85.018 125.644 71.6962 125.71 57.8246C125.71 40.7424 117.551 25.4032 104.606 14.8917Z" fill="white"/>
+    </svg>
+    <p>Messanger</p>
+  </div>
+  <div class="mesnpage" id="message-page">
+  <div class="mesn-con-box">
+  <div class="mesn-con-con">
+    <img src="me.JPG">
+  </div>
+  <p>Christian</p>
+  <div class="mesn-con-icons-box">
+    <a href="tel:+1-613-282-5664">
+    <div class="mesn-con-icons-i">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mesn-con-icons-svg"  viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </div>
+  </a>
+    <div class="mesn-con-icons-i" onclick="mesninfo()">
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg class="mesn-con-icons-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#fff;}</style></defs><title>x</title><path class="cls-1" d="M59.25625,2.65407A14.62972,14.62972,0,1,1,44.62653,17.28379,14.619,14.619,0,0,1,59.25625,2.65407Z"/><path class="cls-1" d="M49.67716,45.027a8.69756,8.69756,0,0,0-7.178,8.56486h0a8.69454,8.69454,0,0,0,8.6967,8.6967h.86206v48.17411H47.40528a7.44163,7.44163,0,0,0-7.44163,7.44163h0a7.44163,7.44163,0,0,0,7.44163,7.44163H80.59472a7.44163,7.44163,0,0,0,7.44163-7.44163h0a7.44163,7.44163,0,0,0-7.44163-7.44163h-4.6019V48.96654a7.50925,7.50925,0,0,0-8.96765-7.3663C59.51679,43.0868,49.97494,44.97466,49.67716,45.027Z"/></svg>
+    </div>
+  </div>
+  </div>
+  <div class="mesn-message-bb"><p>Send me a short message down below :)</p>
+  <div class="mesn-message-bb-m"></div>
+  </div>
+  <form class="mesn-msg-box" id="contact-form-message" method="post" action="message.php">
+  <input name="messager" type="text" class="search-bar-msg" placeholder="Message">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg"  class="mesn-svg-send" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+  <div class="phone-x-w" id="phone-x-w" onclick="mesnoff()">
+  <p>&#10006;</p>
+  </div>
+  </div>
+  
+  <div class="contact-p" onclick="contacton()">
+    <svg class="contact-svg" viewBox="0 0 64 64"><circle cx="14.5" cy="24.5" r="9.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M1 49A14.74 14.74 0 0 1 15.48 34M29 49A14.74 14.74 0 0 0 14.52 34"/><line x1="35" x2="63" y1="15" y2="15" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/><line x1="35" x2="63" y1="31" y2="31" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/><line x1="35" x2="63" y1="47" y2="47" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/></svg>
+    <p>Contact</p>
+  </div>
+  </div>
+  <div class="contactpage" id="contact-page">
+  <div class="contact-profilepic">
+    <img src="me.JPG">
+  </div>
+  <div class="contactpage-name">
+  <p>Christian Neeson</p>
+  </div>
+  <a href="tel:+1-613-282-5664">
+  <div class="contactpage-phone">
+  <svg xmlns="http://www.w3.org/2000/svg" class="contactpage-phone-svg"  viewBox="0 0 24 24" fill="none" stroke="rgba(255, 255, 255, 0.453)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+  <p>+1 613-282-5664</p>
+  </div>
+  </a>
+  <a href="mailto:christianneeson09@gmail.com">
+  <div class="contactpage-email">
+  <svg xmlns="http://www.w3.org/2000/svg" class="contactpage-email-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255, 255, 255, 0.453)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  <p>christianneeson09@gmail.com</p>
+  </div>
+  </a>
+  <a href="https://www.google.ca/maps?q=,+Ottawa,+ON,+,+ca">
+  <div class="contactpage-location">
+  
+  <svg class="contactpage-location-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+  <style type="text/css">
+  .st0{fill:none;stroke:rgba(255, 255, 255, 0.453);stroke-width:2;stroke-miterlimit:10;}
+  .st1{fill:none;stroke:rgba(255, 255, 255, 0.453);stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st2{fill:none;stroke:rgba(255, 255, 255, 0.453);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st3{fill:none;stroke:rgba(255, 255, 255, 0.453);stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+  .st4{fill:none;stroke:rgba(255, 255, 255, 0.453);stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
+  </style>
+  <path class="st1" d="M25,13c0,8-9,15-9,15s-9-7-9-15c0-5,4-9,9-9S25,8,25,13z"/>
+  <circle class="st1" cx="16" cy="13" r="3"/>
+  </svg>
+  <p>Ottawa, ON</p>
+  </div>
+  </a>
+  <div class="contactpage-notes">
+  <h1>Notes</h1>
+  <p>Web Developer / Front End Developer</p>
+  <p>Very strong skills in CSS, JavaScript, HTML</p>
+  </div>
+  <div class="phone-x-w" id="phone-x-w" onclick="contactoff()">
+    <p>&#10006;</p>
+    </div>
+  </div>
+  
+  
+  <!--end of phone-->
+  </div>
+    </div>
+      </div>
+      <div class="sec2-part1">
+        <div class="sec2-part1-t"><h3>Why me?</h3></div>
+        <div class="sec2-part1-i1"><h1>Front End Skills</h1></div>
+        <div class="sec2-part1-i2">
+          <h2>CSS Skills</h2>
+          <p>Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>
+            </div>
+            <div class="sec2-part1-i3">
+              <h2>Work Ethic</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p>
+                </div>
+      </div>
+    
+      <div class="sec2-part2">
+          <div class="sec2-part2-inline">
+    
+          <div class="screen-two">
+              <div class="screen-two-view">
+                  <div class="stv-redsquare" id="stv-square"></div>
+                  <div class="stv-greentriangle" id="stv-triangle"></div>
+              </div>
+              <div class="screen-two-stand">
+                  <div class="screen-two-stand-bot"></div>
+                  <div class="screen-two-stand-line"></div>
+              </div>
+          </div>
+    
+          <div class="screen-one">
+              <div class="screen-one-view">
+                  <div class="screen-one-view-header">
+                      <div class="sovh-block1">
+                          <div class="sovh-yellow"></div>
+                          <p>Script.js</p>
+                      </div>
+                      <div class="sovh-block1">
+                          <div class="sovh-orange"></div>
+                          <p>Index.html</p>
+                      </div>
+                      <div class="sovh-block2">
+                          <div class="sovh-cyan"></div>
+                          <p>Style.css</p>
+                      </div>
+                  </div>
+                  <p><span style="color:rgb(158, 32, 32);">body</span> {</p>
+                      <p><span style="color:rgb(0, 188, 202);">background: #fff</span>;</p>
+                      <p><span style="color:rgb(0, 188, 202);">display: grid</span>;</p>
+                      <p><span style="color:rgb(0, 188, 202);">place-content: center</span>;</p>
+                      <p>}</p>
+                      <div class="screen-one-css-typing" id="soct-square">
+                          <p><span style="color:rgb(158, 32, 32);">div</span> {</p>
+                              <p><span style="color:rgb(0, 188, 202);">background: red</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">width: 50px</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">height: 50px</span>;</p>
+                              <p>}</p>
+                      </div>
+                      <div class="screen-one-css-typingt" id="soct-triangle">
+                          <p><span style="color:rgb(158, 32, 32);">div</span> {</p>
+                              <p><span style="color:rgb(0, 188, 202);">width: 0</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">height: 0</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">border-left: 25px solid transparent</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">border-right: 25px solid transparent</span>;</p>
+                              <p><span style="color:rgb(0, 188, 202);">border-bottom: 50px solid green;</span>;</p>
+                              <p>}</p>
+                      </div>
+              </div>
+              <div class="screen-one-stand">
+                  <div class="screen-one-stand-bot"></div>
+                  <div class="screen-one-stand-line"></div>
+              </div>
+          </div>
+    
+          <div class="sec2-pc">
+              <svg class="sec2-pc-svg" xmlns="http://www.w3.org/2000/svg" width="2479" height="2500" viewBox="0 0 1233.307 1243.977"><path fill="currentColor" d="M1224.042 23.912c1.397-7.501-1.534-15.402-8.03-20.092-8.327-6.012-19.842-4.808-26.771 2.776l-10.805 11.861-17.055 7.32c-6.059-1.874-12.818-2.035-19.859-.295-4.036 1-5.23.765-8.82.057-7.852-1.54-16.064-2.473-29.164 1.714-4.622-.27-10.035.391-18.546 3.18-10.686 3.524-17.339 11.924-22.195 18.085l-1.614 2.067c-30.554 7.871-42.624 25.046-47.311 38.414-.927 2.598-1.538 5.186-2.035 7.775-32.202-24.409-76.466-26.623-114.034-4.661-43.121 25.24-62.406 73.024-49.111 121.756 21.439 78.72 96.129 152.861 140.733 197.187l14.454 14.444c23.241 23.708 53.31 71.497 47.31 103.439-1.461 7.966-5.68 19.523-25.152 28.341-9.921 4.487-19.413 7.27-28.595 8.357 16.473-46.178 8.507-95.833-22.761-128.36-44.634-46.34-86.79-34.778-102.897-22.198-6.781 5.33-9.462 14.38-6.662 22.525 2.821 8.149 10.521 13.63 19.179 13.622 21.419-.017 45.518 15.933 55.987 37.094 8.824 17.834 7.12 37.164-4.84 56.373-9.067-7.395-16.88-15.548-23.572-22.58-2.757-2.881-5.349-5.604-7.64-7.835l-1.665-1.846c-32.032-36.098-64.663-57.159-97.349-62.916-4.096-57.769-44.91-116.209-106.776-150.185-5.01-2.77-10.215-5.224-15.61-7.448-11.54-60.358-48.462-100.833-107.363-117.405-85.953-24.221-154.199 14.191-187.249 105.332-11.28 31.099-35.246 137.111-54.92 225.991l-3.703 16.656c-2.632 11.752-16.328 32.875-30.921 37.903-4.028 1.415-9.105 2.071-16.128-3.663-14.331-11.661-5.868-45.313-1.317-63.396.892-3.51 1.636-6.535 2.254-9.288 3.72-17.225-1.933-36.434-14.78-50.112-12.557-13.384-29.935-19.53-47.676-16.847-37.574 5.657-49.49 36.047-54.172 49.743-3.642-6.953-8.659-16.083-18.13-21.492-7.692-4.392-12.848-6.14-17.448-6.813-12.094-6.805-20.309-7.472-28.38-7.523-3.628-.017-4.863-.017-8.606-1.827-7.478-3.561-15.188-4.657-22.401-3.282l-13.932-8.835-8.818-13.435c-5.696-8.681-17.029-11.623-26.26-6.832-7.002 3.641-11.017 10.902-10.847 18.436-6.966 3.08-11.831 9.953-12.03 17.951-.262 10.267 7.223 19.098 17.398 20.526l15.884 2.246 13.736 8.706c1.727 6.892 5.825 13.373 12.094 18.712 3.167 2.702 3.673 3.815 5.186 7.148 3.333 7.319 7.306 14.554 18.444 22.816 2.462 3.873 6.135 7.88 13.335 13.135 9.088 6.643 19.791 7.127 27.611 7.47.769.057 1.723.083 2.627.144 24.167 20.28 45.182 20.091 58.799 16.097 2.62-.756 5.097-1.761 7.48-2.849-1.079 40.383 22.889 77.679 62.608 95.392 45.613 20.395 95.694 8.23 127.589-30.939 51.487-63.286 68.308-167.161 78.337-229.221l3.358-20.188c5.738-32.699 27.057-84.961 56.516-98.704 7.319-3.425 19.205-6.715 37.704 3.99 9.445 5.423 17.203 11.516 23.43 18.338-47.115 13.513-82.843 48.92-91.066 93.289-11.729 63.216 22.232 90.797 41.844 96.543 8.302 2.441 17.174-.661 22.181-7.722 5.007-7.008 4.96-16.456-.056-23.456-12.527-17.433-13.575-46.301-2.464-67.15 9.355-17.541 26.075-27.43 48.625-28.883-.688 11.695-2.793 22.801-4.567 32.329-.746 3.907-1.455 7.601-1.941 10.773-.066.336-.344 1.494-.561 2.403-9.723 42.807-9.016 78.879 2.035 107.65-47.453 29.3-81.097 89.195-85.97 156.131-.44 5.71-.506 11.514-.274 17.292-50.059 35.647-71.458 86.077-62.002 146.537 13.796 88.23 77.118 134.254 173.778 126.334 32.967-2.698 139.331-25.034 228.344-44.2l16.651-3.595c11.807-2.481 36.705 1.144 47.353 12.313 2.953 3.11 5.677 7.431 3.395 16.209-4.622 17.879-38.762 24.201-57.1 27.617-3.539.642-6.615 1.207-9.355 1.818-17.221 3.799-32.342 16.944-39.416 34.317-6.935 16.979-5.315 35.363 4.521 50.357 20.807 31.811 53.391 29.979 67.794 28.526-4.793 6.216-11 14.561-11.981 25.463-.777 8.804-.221 14.237 1.074 18.661-1.172 13.821 1.666 21.604 4.972 28.93 1.5 3.31 1.979 4.44 1.941 8.583-.145 8.553 2.269 16.222 6.785 22.323l-2.995 20.776-8.616 13.536c-5.622 8.778-3.667 20.327 4.495 26.755a20.161 20.161 0 0 0 21.248 2.358c5.689 5.094 13.949 6.722 21.329 3.624 9.471-3.964 14.463-14.399 11.599-24.273l-4.457-15.427 3.166-22.086c5.26-4.439 9.216-10.664 11.399-18.24 1.101-3.973 1.903-4.902 4.313-7.678 5.251-6.066 10.181-12.712 13.044-26.249 2.523-3.849 4.618-8.884 6.411-17.603 2.269-11.025-1.776-20.959-4.694-28.212l-.978-2.451c8.37-30.409-.553-49.436-9.827-60.159-1.823-2.052-3.761-3.884-5.719-5.608 37.143-15.818 61.063-53.165 60.655-96.665-.505-49.97-32.418-90.401-81.288-103.097-79.006-20.429-180.434 7.542-241.018 24.273l-19.735 5.37c-32.143 8.413-88.535 10.784-113.29-10.27-6.157-5.238-14.106-14.624-12.086-35.948 1.018-10.835 3.318-20.429 6.917-28.922 31.921 37.215 78.991 54.937 122.746 43.924 62.359-15.69 73.278-58.047 70.321-78.263-1.231-8.536-7.758-15.363-16.222-16.961-8.484-1.594-17.055 2.357-21.312 9.844-10.652 18.619-36.451 31.615-60.031 30.209-19.863-1.186-35.805-12.266-46.536-32.197 10.939-4.21 21.871-6.951 31.299-9.283 3.883-.956 7.524-1.844 10.604-2.72a98.01 98.01 0 0 0 2.427-.514c48.84-10.231 84.016-28.978 104.971-55.74 48.853 24.8 114.764 23.377 174.141-5.064 5.146-2.469 10.189-5.298 15.117-8.379 55.826 25.735 110.228 19.29 158.005-18.949 69.702-55.774 78.242-133.619 23.364-213.552-18.725-27.288-90.938-108.517-151.78-176.244l-11.374-12.691c-7.996-9.016-17.22-32.418-12.818-47.219 1.211-4.101 3.637-8.621 12.39-10.992 17.798-4.846 40.249 21.625 52.303 35.848 2.337 2.766 4.334 5.137 6.245 7.235 11.846 13.074 30.758 19.638 49.334 17.176 18.21-2.415 33.331-12.978 41.484-28.962 17.276-33.846-.514-61.217-8.922-73.007 7.775 1.087 18.108 2.336 28.055-2.246 8.043-3.688 12.453-6.873 15.674-10.202 12.576-5.835 17.913-12.164 22.625-18.673 2.184-2.942 2.885-3.943 6.509-5.944 9.942-5.498 14.51-12.778 16.634-18.482l14.854-6.395 16.034.299c10.401.208 19.265-7.493 20.476-17.815.898-7.805-2.827-15.2-9.133-19.289M673.69 588.467c-6.395 17.59-45.841 34.8-73.804 45.281 7.431-14.08 17.303-27.317 28.724-37.963 21.614-20.156 39.735-19.617 43.533-17.585 2.796 4.937 2.422 7.871 1.547 10.267zm29.738-108.699c-5.646.457-8.141-1.079-9.963-2.864-13.346-13.156-12.539-56.163-10.419-85.962 9.705 12.608 17.638 27.114 22.565 41.946 9.297 28.007 1.267 44.274-2.183 46.88zm102.753 100.699c-28.229-8.736-36.769-24.739-36.85-29.032 2.89-4.899 5.617-6.035 8.111-6.479 18.461-3.171 52.97 22.508 75.938 41.598-15.868.543-32.286-1.467-47.199-6.087z"/><path d="M1213.055 40.867l-18.146-4.034 9.292-16.606-13.762 15.094-29.963 12.878c-2.659-2.855-7.15-4.808-14.076-3.093-18.313 4.567-18.848-5.196-39.187 2.213-4.168 1.536-2.766-2.005-15.916 2.333-9.144 2.998-15.313 18.313-21.427 19.625-59.007 12.631-35.631 62.969-27.478 72.933 10.117 12.4 1.709 16.647-2.778 12.19-6.997-7.004-15.661-18.482-32.291-34.861-56.98-56.212-163.124.939-139.122 88.98 22.616 82.917 112.542 164.499 150.14 202.808 34.016 34.662 93.13 129.41 16.052 164.337-26.202 11.89-48.683 12.799-67.828 7.962 26.891-43.856 25.336-99.307-6.433-132.337-43.737-45.437-75.862-20.292-75.862-20.292 50.893-.039 114.815 64.386 62.143 133.408a94.539 94.539 0 0 1-6.768 7.917c-22.557-13.36-38.771-33.005-49.775-43.856-4.882-4.837-49.451-61.642-104.848-60.427 4.853-58.954-37.788-118.886-96.256-151.026a137.712 137.712 0 0 0-23.993-10.297c-5.728-44.073-27.393-93.837-94.789-112.82-102.664-28.916-146.386 47.625-162.748 92.785-14.019 38.66-51.583 212.109-57.905 240.202-6.003 26.787-43.561 74.807-79.546 45.471-27.757-22.599-10.28-73.164-6.073-92.628 4.521-20.936-14.058-46.567-39.686-42.705-30.712 4.62-36.465 32.837-39.986 41.925-7.431 19.151-24.768 9.685-28.256 7.401-5.26-3.399-8.738-18.744-17.112-23.521-12.022-6.861-11.33-3.118-15.119-5.426-18.442-11.351-20.945-1.905-37.965-10.001-5.307-2.532-9.507-2.284-12.6-.858-1.035.667-1.731 1.361-2.707 2.254L43.446 431.77l-11.181-17.063 6.9 17.256-18.931 1.7 20.214 2.847 26.498 16.802c-1.353 3.977-.837 9.42 5.307 14.659 14.344 12.247 6.739 18.359 24.618 30.589 3.671 2.494-.032 3.408 11.151 11.565 7.756 5.683 23.802 1.785 28.446 6.012 44.613 40.606 71.943-7.693 75.293-20.139 4.177-15.436 12.549-11.077 11.534-4.846-1.645 9.774-5.917 23.49-9.554 46.548-12.542 79.085 95.747 132.11 153.356 61.325 54.223-66.66 68.217-187.285 77.466-240.146 8.413-47.837 51.011-151.081 124.263-108.749 24.925 14.385 38.734 32.136 45.965 50.501-51.332 3.667-95.504 37.241-103.845 82.325-11.468 61.973 27.675 73.458 27.675 73.458-29.693-41.354-14.491-130.819 72.285-128.199a97.7 97.7 0 0 1 10.374.892c2.265 26.109-4.253 50.739-6.662 65.979-1.066 6.556-19.861 71.153 8.489 115.483-53.146 21.849-88.036 83.99-92.756 148.763-.656 8.97-.399 17.667.601 26.079-37.683 23.599-73.868 64.03-63.043 133.191 16.477 105.375 104.259 113.235 152.147 109.301 40.954-3.36 214.31-41.477 242.458-47.416 26.869-5.689 86.161 8.455 74.507 53.373-9.008 34.645-62.253 39.828-81.671 44.094-20.963 4.61-36.488 32.193-22.297 53.875 17.008 25.99 45.045 19.464 54.75 18.898 20.543-1.206 19.128 18.491 18.508 22.617-.905 6.207-13.393 15.758-14.251 25.322-1.232 13.783 1.887 11.604 1.359 16.006-2.651 21.507 6.981 19.808 6.7 38.685-.08 5.711 1.802 9.364 4.274 11.583l.09-.099.73.778.723.557v.029a9.344 9.344 0 0 0 2.357 1.113l-5.204 36.047-10.983 17.225 12.938-13.393 9.322 16.588-5.689-19.617 5.26-36.403c3.985-.638 8.349-3.484 10.444-10.852 5.162-18.146 13.885-13.771 17.539-35.116.76-4.372 3.097-1.386 5.884-14.947 1.959-9.42-8.276-22.392-6.39-28.356 18.324-57.504-36.974-62.203-49.656-60.091-15.779 2.638-15.321-6.781-9.207-8.435 9.568-2.612 23.807-4.436 46.278-10.715 77.111-21.589 80.208-142.085-8.124-164.964-83.222-21.529-198.695 16.021-250.586 29.622-46.987 12.301-158.584 16.587-150.62-67.658 2.694-28.649 13.057-48.606 26.75-62.813 24.728 45.101 73.649 71.273 118.095 60.073 61.166-15.368 55.277-55.74 55.277-55.74-25.238 44.184-112.867 67.684-146.66-12.3a104.013 104.013 0 0 1-3.51-9.798c22.81-12.954 47.896-17.271 62.78-21.431 6.765-1.878 81.14-12.785 106.097-64.221 45.479 32.767 114.696 31.611 171.852 4.189 8.115-3.867 15.538-8.435 22.349-13.465 39.179 20.984 92.263 32.32 146.92-11.399 83.285-66.647 46.507-146.735 19.323-186.349-23.274-33.888-142.407-165.425-161.591-186.909-18.219-20.511-35.435-78.968 9.36-91.158 34.53-9.398 65.487 34.254 78.85 49.016 14.399 15.872 46.027 15.681 57.83-7.41 14.123-27.67-5.485-48.776-10.8-56.917-11.243-17.216 6.543-25.76 10.43-27.301 5.826-2.284 20.327 3.824 29.066-.21 12.59-5.772 9.152-7.399 13.227-9.126 19.979-8.39 13.736-15.908 30.227-25.034 4.55-2.516 6.836-5.558 7.754-8.529l-.166-.578c.73-2.562.646-4.321.276-5.712l29.432-12.638 20.388.374M664.942 366.091c.564-5.5 1.07-11.931 1.381-19.035 28.335 19.338 48.869 50.59 58.48 79.423 13.897 41.902-1.513 71.388-18.231 73.294-55.592 6.365-45.904-90.814-41.63-133.682zM584.85 660.546c-5.232 1.801-11.297 3.993-17.911 6.684 5.804-33.809 25.665-65.504 47.888-86.245 32.278-30.103 65.503-28.371 74.209-13.961 28.927 47.867-63.459 79.535-104.186 93.522zm215.34-60.771c-42.174-13.052-57.151-42.781-48.989-57.478 27.188-48.908 100.573 15.544 132.945 43.981 4.146 3.654 9.059 7.833 14.688 12.213-32.23 11.77-69.625 10.294-98.644 1.284z"/><path fill="transparent" d="M953.835 1224.651h3.828v-11.153h4.356v-2.69h-12.407v2.69h4.223v11.153M963.148 1224.192v-13.128h5.784l2.115 8.893h.039l2.09-8.893h5.646v13.128h-3.177v-10.987l-.06-.038-3.038 11.025h-3.293l-2.885-11.123-.043.059v11.064h-3.178"/></svg>
+              <div class="sec2-pc-right">
+                  <div class="sec2-pc-right-power"></div>
+                  <div class="sec2-pc-right-usb1">
+                      <div class="pcusb"></div>
+                  </div>
+                  <div class="sec2-pc-right-usb2">
+                      <div class="pcusb"></div>
+                  </div>
+              </div>
+          </div>
+    
+      </div>
+      
+      <?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+    <svg class="svg-keyboardpc" version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="1280.000000pt" height="640.000000pt" viewBox="0 0 1280.000000 640.000000"
+    preserveAspectRatio="xMidYMid meet">
+    <metadata>
+    Created by potrace 1.15, written by Peter Selinger 2001-2017
+    </metadata>
+    <g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
+    fill="#000000" stroke="none">
+    <path d="M81 5342 c-19 -9 -44 -30 -55 -45 -20 -27 -21 -43 -24 -358 -3 -311
+    -2 -332 17 -374 16 -36 29 -50 63 -65 40 -18 67 -20 353 -20 174 0 326 4 346
+    10 19 5 48 24 65 41 l29 30 3 350 c3 339 2 352 -18 384 -39 63 -51 65 -417 65
+    -292 0 -332 -2 -362 -18z"/>
+    <path d="M1211 5342 c-19 -9 -44 -30 -55 -45 -20 -28 -21 -40 -21 -377 0 -477
+    -37 -440 433 -440 349 0 363 2 412 55 l25 27 0 358 0 358 -25 27 c-49 53 -63
+    55 -412 55 -288 0 -327 -2 -357 -18z"/>
+    <path d="M2373 5351 c-49 -13 -83 -39 -99 -77 -12 -29 -14 -95 -12 -374 l3
+    -340 38 -37 37 -38 348 -3 c322 -2 349 -1 381 16 69 37 71 47 71 422 0 470 34
+    434 -420 437 -173 1 -330 -2 -347 -6z"/>
+    <path d="M3458 5335 c-14 -8 -36 -30 -47 -49 -20 -32 -21 -46 -21 -372 0 -319
+    1 -341 20 -371 37 -62 43 -63 421 -63 325 0 343 1 374 20 63 39 65 52 65 415
+    0 363 -2 376 -65 415 -31 19 -49 20 -376 20 -280 -1 -349 -3 -371 -15z"/>
+    <path d="M4593 5334 c-18 -9 -42 -31 -53 -49 -19 -31 -20 -49 -20 -371 0 -476
+    -37 -438 425 -442 327 -3 330 -2 374 20 80 41 81 45 81 418 0 363 -2 372 -69
+    417 -34 23 -37 23 -370 23 -287 0 -341 -3 -368 -16z"/>
+    <path d="M5725 5330 c-75 -37 -75 -35 -75 -420 0 -384 0 -384 72 -421 34 -18
+    62 -19 364 -19 361 0 373 2 417 64 22 31 22 35 22 376 0 477 36 440 -437 440
+    -303 0 -326 -1 -363 -20z"/>
+    <path d="M6874 5339 c-46 -13 -91 -69 -99 -121 -3 -24 -5 -178 -3 -343 3 -333
+    6 -346 71 -385 30 -19 52 -20 370 -20 372 0 374 0 419 62 l23 33 0 342 c0 329
+    -1 343 -21 369 -11 15 -33 37 -48 48 -26 20 -41 21 -354 23 -181 1 -341 -2
+    -358 -8z"/>
+    <path d="M7985 5330 c-31 -12 -64 -53 -75 -91 -13 -45 -13 -623 0 -671 6 -20
+    26 -50 46 -67 l35 -31 347 0 c327 0 349 1 379 20 62 37 63 44 63 415 0 371 -1
+    378 -63 415 -30 19 -52 20 -372 19 -187 0 -349 -4 -360 -9z"/>
+    <path d="M9099 5317 c-67 -45 -69 -55 -69 -415 0 -466 -28 -436 400 -440 362
+    -4 390 -1 439 43 l36 33 3 354 c2 332 1 355 -17 384 -38 62 -53 64 -424 64
+    -331 0 -334 0 -368 -23z"/>
+    <path d="M10243 5310 c-62 -37 -63 -44 -63 -417 0 -318 1 -340 20 -370 41 -67
+    -47 -63 1291 -63 1197 0 1212 0 1244 20 63 39 65 52 65 415 0 363 -2 376 -65
+    415 -32 20 -47 20 -1246 20 -1186 0 -1215 -1 -1246 -20z"/>
+    <path d="M80 4212 c-19 -9 -45 -32 -57 -51 -23 -34 -23 -37 -23 -371 0 -334 0
+    -337 23 -371 48 -72 8 -69 822 -69 696 0 732 1 772 19 77 36 78 39 78 421 0
+    317 -1 337 -20 369 -11 18 -36 42 -55 52 -33 18 -72 19 -770 19 -680 0 -738
+    -1 -770 -18z"/>
+    <path d="M11070 4212 c-22 -12 -44 -35 -57 -62 -22 -43 -23 -52 -23 -360 0
+    -288 2 -319 19 -357 14 -30 31 -48 60 -62 40 -21 52 -21 828 -21 879 0 832 -4
+    880 69 23 34 23 37 23 371 0 334 0 337 -23 371 -48 73 -1 69 -882 69 -746 0
+    -792 -1 -825 -18z"/>
+    <path d="M2019 4197 c-67 -45 -69 -55 -69 -411 0 -298 1 -322 20 -361 37 -76
+    33 -75 428 -75 339 0 350 1 376 21 55 43 56 50 56 414 0 371 -1 378 -63 415
+    -30 19 -52 20 -373 20 -338 0 -341 0 -375 -23z"/>
+    <path d="M3161 4202 c-19 -9 -44 -30 -55 -45 -20 -27 -21 -43 -24 -365 -3
+    -372 -1 -380 61 -426 27 -20 43 -21 355 -24 208 -2 340 0 362 7 20 6 49 24 65
+    41 l30 31 0 359 0 358 -25 27 c-51 55 -53 55 -407 55 -293 0 -332 -2 -362 -18z"/>
+    <path d="M4306 4210 c-15 -5 -37 -17 -48 -27 -47 -42 -48 -53 -48 -405 0 -315
+    1 -335 20 -366 11 -18 34 -41 52 -52 31 -19 51 -20 366 -20 359 0 361 0 412
+    55 l25 27 3 346 c3 486 40 446 -423 449 -181 1 -343 -2 -359 -7z"/>
+    <path d="M5403 4190 c-62 -37 -63 -44 -63 -412 0 -373 2 -383 71 -420 32 -17
+    59 -18 381 -16 l348 3 37 38 38 37 3 340 c3 378 1 393 -62 431 -29 18 -56 19
+    -376 19 -325 0 -347 -1 -377 -20z"/>
+    <path d="M6533 4191 c-62 -39 -63 -45 -63 -418 0 -318 1 -340 20 -370 37 -62
+    43 -63 420 -63 384 0 384 0 421 72 18 34 19 62 19 358 0 347 -2 361 -55 410
+    l-27 25 -351 3 c-335 2 -354 1 -384 -17z"/>
+    <path d="M7671 4193 c-71 -35 -71 -37 -71 -425 l0 -346 27 -33 c49 -57 61 -59
+    410 -59 294 0 321 2 361 20 34 15 47 29 63 65 19 43 20 63 17 374 -4 456 33
+    421 -443 421 -287 0 -334 -3 -364 -17z"/>
+    <path d="M8805 4190 c-80 -39 -80 -41 -80 -420 0 -475 -35 -440 440 -440 378
+    0 381 1 423 81 22 44 23 47 20 369 -3 370 -4 376 -81 411 -38 17 -69 19 -362
+    19 -300 0 -323 -1 -360 -20z"/>
+    <path d="M9967 4200 c-47 -9 -94 -53 -108 -100 -7 -22 -9 -152 -7 -355 3 -355
+    3 -354 71 -395 30 -19 53 -20 370 -20 373 0 380 1 417 63 19 30 20 52 20 380
+    l0 347 -33 36 c-23 26 -45 38 -77 45 -54 10 -599 10 -653 -1z"/>
+    <path d="M102 3093 c-40 -8 -90 -67 -97 -115 -3 -24 -5 -183 -3 -355 3 -297 4
+    -313 24 -340 11 -15 36 -36 55 -45 32 -17 101 -18 1017 -18 1080 0 1027 -3
+    1073 61 l24 34 0 345 c0 379 1 373 -63 417 -26 17 -77 18 -1017 19 -545 1
+    -1000 -1 -1013 -3z"/>
+    <path d="M2529 3057 c-67 -45 -69 -54 -69 -417 0 -364 2 -374 71 -415 32 -19
+    52 -20 374 -20 378 0 373 -1 415 68 19 30 20 53 20 371 0 322 -1 340 -20 371
+    -39 63 -51 65 -423 65 -331 0 -334 0 -368 -23z"/>
+    <path d="M3699 3071 c-50 -16 -71 -33 -90 -74 -17 -38 -19 -70 -19 -362 0
+    -357 2 -367 69 -412 34 -23 37 -23 368 -23 371 0 386 2 424 64 18 29 19 56 19
+    378 l0 347 -31 35 c-17 20 -47 40 -67 46 -43 12 -634 12 -673 1z"/>
+    <path d="M4805 3066 c-17 -7 -43 -28 -58 -45 l-27 -33 0 -348 0 -348 27 -33
+    c49 -57 61 -59 413 -59 355 0 369 2 411 61 l24 34 0 347 c0 475 37 438 -435
+    438 -248 -1 -332 -4 -355 -14z"/>
+    <path d="M5944 3069 c-18 -5 -46 -25 -63 -44 l-31 -36 0 -347 c0 -330 1 -349
+    20 -380 37 -60 53 -62 422 -62 469 0 432 -36 436 423 4 484 35 451 -428 454
+    -179 1 -339 -2 -356 -8z"/>
+    <path d="M7026 3039 c-22 -19 -40 -46 -46 -70 -7 -26 -10 -155 -8 -357 3 -352
+    3 -351 71 -392 30 -19 53 -20 372 -20 474 0 439 -31 443 390 4 361 1 390 -43
+    439 l-33 36 -360 3 -360 3 -36 -32z"/>
+    <path d="M8169 3047 c-67 -45 -69 -55 -69 -411 0 -471 -30 -440 422 -444 197
+    -2 332 1 355 7 22 6 52 25 68 41 l30 31 3 349 c3 387 2 392 -61 430 -30 19
+    -52 20 -373 20 -338 0 -341 0 -375 -23z"/>
+    <path d="M9311 3052 c-19 -9 -44 -30 -55 -45 -20 -28 -21 -40 -21 -377 0 -477
+    -37 -440 433 -440 349 0 363 2 412 55 l25 27 3 353 3 353 -27 31 c-51 61 -51
+    61 -411 61 -293 0 -332 -2 -362 -18z"/>
+    <path d="M10450 3063 c-8 -3 -26 -15 -38 -27 -51 -46 -52 -52 -52 -403 0 -367
+    2 -378 70 -418 35 -20 47 -20 1150 -20 1103 0 1115 0 1150 20 68 40 70 51 70
+    418 0 354 0 356 -55 407 l-27 25 -1126 2 c-620 1 -1134 -1 -1142 -4z"/>
+    <path d="M1783 1921 c-68 -42 -68 -41 -71 -392 -2 -205 1 -331 8 -357 6 -25
+    24 -52 45 -71 l36 -31 465 0 c522 0 507 -2 545 72 18 34 19 62 19 363 0 352 0
+    354 -55 405 l-27 25 -466 3 c-449 2 -468 1 -499 -17z"/>
+    <path d="M3143 1920 c-68 -41 -68 -40 -71 -392 -2 -202 1 -331 8 -357 6 -24
+    24 -51 45 -70 l36 -31 3231 0 c3222 0 3231 0 3263 20 63 39 65 52 65 409 0
+    348 -2 362 -55 411 l-27 25 -3231 2 c-3190 3 -3232 3 -3264 -17z"/>
+    <path d="M10033 1921 c-68 -42 -68 -41 -71 -393 -2 -202 1 -331 8 -357 6 -24
+    24 -51 45 -70 l36 -31 465 0 c525 0 506 -3 544 75 19 39 20 63 20 358 0 344
+    -2 359 -55 407 l-27 25 -466 3 c-449 2 -468 1 -499 -17z"/>
+    <path d="M11393 1920 c-62 -37 -63 -44 -63 -417 0 -318 1 -340 20 -370 39 -65
+    13 -63 712 -63 602 0 635 1 664 19 62 37 64 54 64 418 0 367 -2 378 -71 415
+    -32 17 -73 18 -664 18 -607 0 -631 -1 -662 -20z"/>
+    <path d="M79 1893 c-57 -48 -59 -61 -59 -408 0 -347 2 -360 59 -408 l33 -27
+    636 0 c614 0 638 1 669 20 62 37 63 44 63 415 0 371 -1 378 -63 415 -31 19
+    -55 20 -669 20 l-636 0 -33 -27z"/>
+    </g>
+    </svg>
+    
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg class="svg-mousepc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.141 2h1.718c2.014 0 3.094.278 4.072.801a5.452 5.452 0 0 1 2.268 2.268c.523.978.801 2.058.801 4.072v5.718c0 2.014-.278 3.094-.801 4.072a5.452 5.452 0 0 1-2.268 2.268c-.978.523-2.058.801-4.072.801H11.14c-2.014 0-3.094-.278-4.072-.801a5.452 5.452 0 0 1-2.268-2.268C4.278 17.953 4 16.873 4 14.859V9.14c0-2.014.278-3.094.801-4.072A5.452 5.452 0 0 1 7.07 2.801C8.047 2.278 9.127 2 11.141 2zM11 6v5h2V6h-2z" fill="rgb(9,9,9)"/></svg>
+    </div>
+
+  </section>
+
 <h1>test test test</h1><br><br><br><br>
 <h1>test test test</h1><br><br><br><br>
 <h1 id="projects">test test test</h1><br><br><br><br>
@@ -114,8 +654,6 @@
 var bg1 = document.getElementById("bg1");
 var bg2 = document.getElementById("bg2");
 var btext = document.getElementById("p-g");
-
-
 
 
 //ufo w
@@ -150,13 +688,14 @@ window.onload = setTimeout(function la() {
   document.getElementById('heaven7s').style.animation = "heaven-effect3 3s forwards";
   document.getElementById('heaven8').style.animation = "heaven-effect1 3s forwards";
   document.getElementById('heaven8s').style.animation = "heaven-effect1 3s forwards";
+  return setupscreen();
 },5400);
 window.onload = setTimeout(function lb() {
     document.getElementById('loadbar').style.visibility = "hidden";
   document.getElementById('clicker').style.visibility = "visible";
   document.getElementById('clicker').style.animation = "load-change-c 1.8s";
   document.getElementById('pdot').style.animation = "load-change 6s";
-  document.getElementById('pdot').style.visibility = "visible";
+  document.getElementById('pdot').style.display = "block";
   document.getElementById('home').classList.add("ani-vp");
   function myFunction(x) {
   if (x.matches) {
@@ -205,37 +744,244 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 //ham nav
-function navon() {
-    var cx;
-  cx = setTimeout(function cxb() {
-    document.getElementById('dropcontent').style.display = "block";
-  },280);
-}
-function navclick() {
-  var cx;
-  cx = setTimeout(function cxb() {
-    document.getElementById('dropclose').style.display = "block";
-  },280);
-}
-function navclickoff() {
-    var cx;
-  cx = setTimeout(function cxb() {
-    document.getElementById('dropclose').style.display = "none";
-  },500);
-}
-function navoff() {
-    if (document.getElementById('dropcontent').style.display = "block") {
-  document.getElementById('dropcontent').style.animation = "linkoff 0.25s forwards";
-  var w;
-  w = setTimeout(function wb() {
-    document.getElementById('dropcontent').style.animation = "";
-    document.getElementById('dropcontent').style.display = "none"
-  },250);
- }
+function hamnav() {
+    var hamchecker = document.getElementById("hamcheck");
+    if (hamchecker.checked == true) {
+        document.getElementById("hamp").style.animation = "hamburgerdisplay 0.25s forwards";
+        document.getElementById("hl2").style.width = "35px";
+        document.getElementById("hl1").style.width = "40px";
+        document.getElementById('dropcontent').style.display = "block";
+    } else {
+        document.getElementById('dropcontent').style.animation = "linkoff 0.25s forwards";
+        setTimeout(function wbaf() {
+            document.getElementById("hl2").style.width = "30px";
+        document.getElementById("hl1").style.width = "30px";
+            document.getElementById("hamp").style.animation = "hamburgeroff 0.25s forwards";
+        document.getElementById('dropcontent').style.animation = "";
+        document.getElementById('dropcontent').style.display = "none";
+        },250);
+    }
 }
 
-    
+
+
+//setup screen code, being returned above
+function setupscreen() {
+      setTimeout(function setupscreent() {
+      document.getElementById("soct-square").style.display = "none";
+      document.getElementById("stv-square").style.display = "none";
+      document.getElementById("soct-triangle").style.display = "block";
+      document.getElementById("stv-triangle").style.display = "block";
+  },15000);
+  setTimeout(function setupscreens() {
+      document.getElementById("soct-square").style.display = "block";
+      document.getElementById("stv-square").style.display = "block";
+      document.getElementById("soct-triangle").style.display = "none";
+      document.getElementById("stv-triangle").style.display = "none";
+      return setupscreen();
+  },35000);
+  }
+
+//section 1 blob
+const tween = KUTE.fromTo(
+          '#blob1',
+          { path: '#blob1' },
+          { path: '#blob2' },
+          { repeat: 999, duration: 9000, yoyo: true }
+        ).start();
 
 </script>
+<!--PHONE SCRIPTS-->
+<script src="script.js"></script>
+<script>
+  window.onload = function phonetimeheader() {
+var hours = document.getElementById("hours");
+    var minutes = document.getElementById("minutes");
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    setTimeout(function wb() {
+      return phonetimeheader();
+  },1000);
+}
+function phonetimeheaderb() {
+var hoursb = document.getElementById("hoursb");
+    var minutesb = document.getElementById("minutesb");
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    hoursb.innerHTML = h;
+    minutesb.innerHTML = m;
+    setTimeout(function wbb() {
+      return phonetimeheaderb();
+  },1000);
+}
+  function settingson() {
+    var settingspage = document.getElementById("settings-page");
+    settingspage.style.display = "block";
+    document.getElementById("phone-headerl").style.display = "none";
+    document.getElementById("phone-headerr").style.display = "none";
+    document.getElementById("phone-headerrb").style.display = "inline";
+    document.getElementById("phone-headerlb").style.display = "inline";
+    return phonetimeheaderb();
+   
+  }
+  function settingsoff() {
+    var settingspage = document.getElementById("settings-page");
+    settingspage.style.animation = "pageloadoff 0.8s forwards";
+    document.getElementById("phone-headerl").style.display = "inline";
+    document.getElementById("phone-headerr").style.display = "inline";
+    document.getElementById("phone-headerrb").style.display = "none";
+    document.getElementById("phone-headerlb").style.display = "none";
+    setTimeout(function settingsoffs() {
+    settingspage.style.animation = "pageloadon 0.8s";
+    settingspage.style.display = "none"
+  },800);
+}
+function settingsbdefault() {
+  var settingsdefault = document.getElementById("phone-screen");
+  settingsdefault.style.backgroundImage = "url('/phonebackgrounds/default.jpg')";
+}
+function settingsbspace() {
+  var settingsspace = document.getElementById("phone-screen");
+  settingsspace.style.backgroundImage = "url('/phonebackgrounds/space.jpg')";
+}
+function settingsbmountains() {
+  var settingsmountains = document.getElementById("phone-screen");
+  settingsmountains.style.backgroundImage = "url('/phonebackgrounds/mountain.jpeg')";
+}
+function settingsbocean() {
+  var settingsocean = document.getElementById("phone-screen");
+  settingsocean.style.backgroundImage = "url('/phonebackgrounds/ocean.jpg')";
+}
+
+
+
+function flappyon() {
+  var flappypage = document.getElementById("flappy-page");
+  flappypage.style.display = "block";
+  document.getElementById("phone-headerl").style.display = "none";
+    document.getElementById("phone-headerr").style.display = "none";
+    document.getElementById("phone-headerrb").style.display = "inline";
+    document.getElementById("phone-headerlb").style.display = "inline";
+    return phonetimeheaderb();
+}
+function flappyoff() {
+    var flappypage = document.getElementById("flappy-page");
+    flappypage.style.animation = "pageloadoff 0.8s forwards";
+    document.getElementById("phone-headerl").style.display = "inline";
+    document.getElementById("phone-headerr").style.display = "inline";
+    document.getElementById("phone-headerrb").style.display = "none";
+    document.getElementById("phone-headerlb").style.display = "none";
+    setTimeout(function settingsoffs() {
+      flappypage.style.animation = "pageloadon 0.8s";
+      flappypage.style.display = "none"
+  },800);
+}
+function weatheron() {
+  var weatherpage = document.getElementById("weather-page");
+  weatherpage.style.display = "grid";
+  document.getElementById("phone-headerl").style.display = "none";
+    document.getElementById("phone-headerr").style.display = "none";
+    document.getElementById("phone-headerrb").style.display = "inline";
+    document.getElementById("phone-headerlb").style.display = "inline";
+    return phonetimeheaderb();
+}
+function weatheroff() {
+  var weatherpage = document.getElementById("weather-page");
+  weatherpage.style.animation = "pageloadoff 0.8s forwards";
+  document.getElementById("phone-headerl").style.display = "inline";
+    document.getElementById("phone-headerr").style.display = "inline";
+    document.getElementById("phone-headerrb").style.display = "none";
+    document.getElementById("phone-headerlb").style.display = "none";
+    setTimeout(function weatheroffs() {
+      weatherpage.style.animation = "pageloadon 0.8s";
+      weatherpage.style.display = "none"
+  },800);
+}
+
+function clockon() {
+  var clockpage = document.getElementById("clock-page");
+  clockpage.style.display = "grid";
+
+  document.getElementById("phone-headerl").style.display = "none";
+    document.getElementById("phone-headerr").style.display = "none";
+    document.getElementById("phone-headerrb").style.display = "inline";
+    document.getElementById("phone-headerlb").style.display = "inline";
+    return phonetimeheaderb();
+}
+function clockoff() {
+  var clockpage = document.getElementById("clock-page");
+  clockpage.style.animation = "pageloadoff 0.8s forwards";
+
+  document.getElementById("phone-headerl").style.display = "inline";
+    document.getElementById("phone-headerr").style.display = "inline";
+    document.getElementById("phone-headerrb").style.display = "none";
+    document.getElementById("phone-headerlb").style.display = "none";
+    setTimeout(function clockoffs() {
+      clockpage.style.animation = "pageloadon 0.8s";
+      clockpage.style.display = "none"
+  },800);
+}
+
+function mesnon() {
+  var mesnpage = document.getElementById("message-page");
+  mesnpage.style.display = "grid";
+}
+function mesnoff() {
+  var mesnpage = document.getElementById("message-page");
+  mesnpage.style.animation = "pageloadoff 0.8s forwards";
+    setTimeout(function weatheroffs() {
+      mesnpage.style.animation = "pageloadon 0.8s";
+      mesnpage.style.display = "none"
+  },800);
+}
+function mesninfo() {
+  var mesntocont = document.getElementById("message-page");
+  mesntocont.style.animation = "pageloadoff 0.8s forwards";
+    setTimeout(function mesninfo() {
+      mesntocont.style.animation = "pageloadon 0.8s";
+      mesntocont.style.display = "none"
+      var contactpage = document.getElementById("contact-page");
+  contactpage.style.display = "grid";
+  },800);
+}
+function contacton() {
+  var contactpage = document.getElementById("contact-page");
+  contactpage.style.display = "grid";
+}
+function contactoff() {
+  var contactpage = document.getElementById("contact-page");
+  contactpage.style.animation = "pageloadoff 0.8s forwards";
+    setTimeout(function weatheroffs() {
+      contactpage.style.animation = "pageloadon 0.8s";
+      contactpage.style.display = "none"
+  },800);
+}
+</script>
+<script>
+  const deg = 6;
+  const hr = document.querySelector('#hr');
+  const mn = document.querySelector('#mn');
+  const sc = document.querySelector('#sc');
+
+  setInterval(() => {
+  let day = new Date();
+  let hh =  day.getHours() * 30;
+  let mm =  day.getMinutes() * deg;
+  let ss =  day.getSeconds() * deg;
+
+  hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+  mn.style.transform = `rotateZ(${mm}deg)`;
+  sc.style.transform = `rotateZ(${ss}deg)`;
+  })
+</script>
+
+
+
 </body>
 </html>
